@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jollof Social | Authentic West African Eats in Columbus, OH</title>
-    <!-- Google Fonts: Playfair Display for headings & Plus Jakarta Sans for modern body typography -->
+    <title>Jollof Special | Authentic West African Eats in Columbus, OH</title>
+    <!-- Google Fonts: Playfair Display for headings & Plus Jakarta Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="font-heading font-extrabold text-2xl tracking-wider text-brand-gold flex items-center gap-2">
                 <i class="fa-solid fa-fire text-brand-red"></i>
-                JOLLOF SOCIAL
+                JOLLOF SPECIAL
             </a>
             
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase">
@@ -57,7 +57,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero / Splash Section -->
     <section class="relative bg-brand-dark text-white py-20 md:py-28 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#F4A261_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -83,12 +83,12 @@
                     </div>
                 </div>
 
-                <!-- Hero Food Image -->
+                <!-- Splash Screen Image -->
                 <div class="relative max-w-md mx-auto lg:max-w-none">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-gold/20">
                         <img 
-                            src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=1000&q=80" 
-                            alt="Jollof Social Signature Plate" 
+                            src="images/allinone.jpg" 
+                            alt="Jollof Social All In One Feast" 
                             class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
                         />
                         <div class="absolute bottom-4 left-4 bg-brand-dark/90 backdrop-blur-md text-white px-4 py-2 rounded-xl text-sm font-semibold border border-stone-700">
@@ -100,86 +100,135 @@
         </div>
     </section>
 
-    <!-- Interactive Menu Section -->
+    <!-- Interactive Itemized Menu Section -->
     <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
             <h2 class="font-heading text-3xl sm:text-5xl font-black text-stone-900 mb-4">Craft Your Plate</h2>
             <p class="text-stone-600 max-w-xl mx-auto text-lg">Select your base, pair it with savory protein, add rich sides, and finish with our signature pepper sauces.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- Step 1: Base -->
-            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=600&q=80" alt="Jollof & Rice Bases" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 bg-amber-100 text-brand-gold font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">1</span>
+        <!-- Category 1: Base -->
+        <div class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="bg-amber-100 text-brand-gold font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">1</span>
+                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Choose Base</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Banku -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/banku.jpg" alt="Banku" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Banku</h4>
+                    </div>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Choose Base</h3>
-                        <ul class="space-y-3 text-stone-700 font-medium">
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Jollof Rice</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Rice</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Waakye (Rice & Beans)</li>
-                        </ul>
+                <!-- Jollof Rice -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/jollof.jpg" alt="Jollof Rice" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Jollof Rice</h4>
+                    </div>
+                </div>
+                <!-- Fried Rice -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/friedrice.jpg" alt="Fried Rice" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Rice</h4>
+                    </div>
+                </div>
+                <!-- Waakye -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/waakye.jpg" alt="Waakye" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Waakye (Rice & Beans)</h4>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Step 2: Protein -->
-            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" alt="Proteins" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 bg-red-100 text-brand-red font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">2</span>
+        <!-- Category 2: Protein -->
+        <div class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="bg-red-100 text-brand-red font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">2</span>
+                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Pick Protein</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Fried Chicken -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/friedchicken.jpg" alt="Fried Chicken" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Chicken</h4>
+                    </div>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Pick Protein</h3>
-                        <ul class="space-y-3 text-stone-700 font-medium">
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Chicken</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Fish</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Beef</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Pepper Gizzard</li>
-                        </ul>
+                <!-- Fried Fish -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/friedfish.jpg" alt="Fried Fish" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Fish</h4>
+                    </div>
+                </div>
+                <!-- Fried Beef -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/friedbeef.jpg" alt="Fried Beef" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Beef</h4>
+                    </div>
+                </div>
+                <!-- Pepper Gizzard -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/peppergizzard.jpg" alt="Pepper Gizzard" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Pepper Gizzard</h4>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Step 3: Sides -->
-            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Fried Plantains & Sides" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 bg-emerald-100 text-brand-green font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">3</span>
+        <!-- Category 3: Sides -->
+        <div class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="bg-emerald-100 text-brand-green font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">3</span>
+                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Add Sides</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Fried Plantains -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/friedplantain.jpg" alt="Fried Plantains" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Plantains</h4>
+                    </div>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Add Sides</h3>
-                        <ul class="space-y-3 text-stone-700 font-medium">
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Plantains</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Coleslaw</li>
-                        </ul>
+                <!-- Coleslaw -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/coleslaw.jpg" alt="Coleslaw" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Coleslaw</h4>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Step 4: Sauce -->
-            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
-                <div class="h-48 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?auto=format&fit=crop&w=600&q=80" alt="Shito Pepper Sauce" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                    <span class="absolute top-3 left-3 bg-stone-100 text-stone-800 font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">4</span>
+        <!-- Category 4: Sauce -->
+        <div>
+            <div class="flex items-center gap-3 mb-8">
+                <span class="bg-stone-100 text-stone-800 font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">4</span>
+                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Top Sauce</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Shito -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/shito.jpg" alt="Shito" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Shito</h4>
+                    </div>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Top Sauce</h3>
-                        <ul class="space-y-3 text-stone-700 font-medium">
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Shito</li>
-                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Pepper Sauce</li>
-                        </ul>
+                <!-- Pepper Sauce -->
+                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                    <img src="images/peppersauce.jpg" alt="Pepper Sauce" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-heading font-bold text-lg text-stone-900">Pepper Sauce</h4>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -217,7 +266,7 @@
                 <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 flex flex-col justify-between">
                     <div>
                         <h3 class="font-heading text-2xl font-bold text-white mb-2">Catering Trays</h3>
-                        <p class="text-brand-gold font-semibold text-sm mb-2">JOLLOF SOCIAL SURPRISES</p>
+                        <p class="text-brand-gold font-semibold text-sm mb-2">JOLLOF SPECIAL SURPRISES</p>
                         <p class="text-stone-400 text-xs mb-6">Ideal for parties, office events, and family gatherings.</p>
                         <div class="font-heading text-3xl font-black text-brand-gold mb-6">$75 – $200+</div>
                     </div>
