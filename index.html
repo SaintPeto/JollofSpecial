@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jollof Social | Authentic West African Eats in Columbus, OH</title>
+    <!-- Google Fonts: Playfair Display for headings & Plus Jakarta Sans for modern body typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
                     colors: {
                         brand: {
                             red: '#D9381E',
@@ -26,17 +34,17 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-brand-light text-brand-dark antialiased selection:bg-brand-gold selection:text-brand-dark">
+<body class="bg-brand-light text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
 
     <!-- Sticky Navigation -->
     <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md text-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2 text-2xl font-black tracking-wider text-brand-gold">
-                <i class="fa-solid font-bold fa-fire text-brand-red"></i>
+            <a href="#" class="font-heading font-extrabold text-2xl tracking-wider text-brand-gold flex items-center gap-2">
+                <i class="fa-solid fa-fire text-brand-red"></i>
                 JOLLOF SOCIAL
             </a>
             
-            <nav class="hidden md:flex items-center space-x-8 font-medium">
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase">
                 <a href="#menu" class="hover:text-brand-gold transition-colors">Menu</a>
                 <a href="#pricing" class="hover:text-brand-gold transition-colors">Pricing Tiers</a>
                 <a href="#location" class="hover:text-brand-gold transition-colors">Location</a>
@@ -50,26 +58,44 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-brand-dark text-white py-24 md:py-32 overflow-hidden">
+    <section class="relative bg-brand-dark text-white py-20 md:py-28 overflow-hidden">
         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#F4A261_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block bg-brand-gold/20 text-brand-gold font-semibold px-4 py-1.5 rounded-full text-sm mb-6 border border-brand-gold/30">
-                Columbus, Ohio • Authentic West African Cuisine
-            </span>
-            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
-                Taste the Tradition, <br class="hidden sm:block"/>
-                <span class="text-brand-gold">Share the Experience.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto mb-10">
-                Crafted with bold spices, rich flavors, and local love. Build your plate or order custom catering for your next big gathering.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#menu" class="bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:scale-105">
-                    Build Your Plate
-                </a>
-                <a href="#pricing" class="bg-stone-800 hover:bg-stone-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-stone-700">
-                    Catering & Packages
-                </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <span class="inline-block bg-brand-gold/20 text-brand-gold font-semibold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest mb-6 border border-brand-gold/30">
+                        Columbus, Ohio • Authentic West African Cuisine
+                    </span>
+                    <h1 class="font-heading text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
+                        Taste the Tradition, <br/>
+                        <span class="text-brand-gold italic">Share the Experience.</span>
+                    </h1>
+                    <p class="text-lg text-stone-300 max-w-xl mx-auto lg:mx-0 mb-8 font-light">
+                        Crafted with bold spices, rich flavors, and local love. Build your plate or order custom catering for your next big gathering.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#menu" class="bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:scale-105 text-center">
+                            Build Your Plate
+                        </a>
+                        <a href="#pricing" class="bg-stone-800 hover:bg-stone-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-stone-700 text-center">
+                            Catering & Packages
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Food Image -->
+                <div class="relative max-w-md mx-auto lg:max-w-none">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-gold/20">
+                        <img 
+                            src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=1000&q=80" 
+                            alt="Jollof Social Signature Plate" 
+                            class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="absolute bottom-4 left-4 bg-brand-dark/90 backdrop-blur-md text-white px-4 py-2 rounded-xl text-sm font-semibold border border-stone-700">
+                            🔥 Hot & Fresh Daily
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -77,54 +103,83 @@
     <!-- Interactive Menu Section -->
     <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mb-4">Craft Your Plate</h2>
-            <p class="text-stone-600 max-w-xl mx-auto">Select your favorite menu, pair it with savory protein, add rich sides, and finish with our signature pepper sauces.</p>
+            <h2 class="font-heading text-3xl sm:text-5xl font-black text-stone-900 mb-4">Craft Your Plate</h2>
+            <p class="text-stone-600 max-w-xl mx-auto text-lg">Select your base, pair it with savory protein, add rich sides, and finish with our signature pepper sauces.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
             <!-- Step 1: Base -->
-            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-xl flex items-center justify-center font-black text-xl mb-6">1</div>
-                <h3 class="text-xl font-bold text-stone-900 mb-4 border-b pb-2 border-stone-100">Choose Menu</h3>
-                <ul class="space-y-3 text-stone-700 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Banku</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Jollof Rice</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fried Rice</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Waakye (Rice & Beans)</li>
-                </ul>
+            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=600&q=80" alt="Jollof & Rice Bases" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-100 text-brand-gold font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">1</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Choose Base</h3>
+                        <ul class="space-y-3 text-stone-700 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Jollof Rice</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Rice</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Waakye (Rice & Beans)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Step 2: Protein -->
-            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-red-100 text-brand-red rounded-xl flex items-center justify-center font-black text-xl mb-6">2</div>
-                <h3 class="text-xl font-bold text-stone-900 mb-4 border-b pb-2 border-stone-100">Pick Protein</h3>
-                <ul class="space-y-3 text-stone-700 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fried Chicken</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fried Fish</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fried Beef</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Pepper Gizzard</li>
-                </ul>
+            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" alt="Proteins" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-red-100 text-brand-red font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">2</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Pick Protein</h3>
+                        <ul class="space-y-3 text-stone-700 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Chicken</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Fish</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Beef</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Pepper Gizzard</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Step 3: Sides -->
-            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-emerald-100 text-brand-green rounded-xl flex items-center justify-center font-black text-xl mb-6">3</div>
-                <h3 class="text-xl font-bold text-stone-900 mb-4 border-b pb-2 border-stone-100">Add Sides</h3>
-                <ul class="space-y-3 text-stone-700 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fried Plantains</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Fresh Coleslaw</li>
-                </ul>
+            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Fried Plantains & Sides" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-emerald-100 text-brand-green font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">3</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Add Sides</h3>
+                        <ul class="space-y-3 text-stone-700 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Fried Plantains</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Coleslaw</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Step 4: Sauce -->
-            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-stone-100 text-stone-800 rounded-xl flex items-center justify-center font-black text-xl mb-6">4</div>
-                <h3 class="text-xl font-bold text-stone-900 mb-4 border-b pb-2 border-stone-100">Top Sauce</h3>
-                <ul class="space-y-3 text-stone-700 font-medium">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Signature Shito</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green text-sm"></i> Spicy Pepper Sauce</li>
-                </ul>
+            <div class="bg-white rounded-2xl border border-stone-200 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?auto=format&fit=crop&w=600&q=80" alt="Shito Pepper Sauce" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-stone-100 text-stone-800 font-black w-10 h-10 rounded-xl flex items-center justify-center shadow-md">4</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-xl font-extrabold text-stone-900 mb-4 border-b pb-2 border-stone-100">Top Sauce</h3>
+                        <ul class="space-y-3 text-stone-700 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Shito</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-brand-green text-sm"></i> Pepper Sauce</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -132,41 +187,41 @@
     <section id="pricing" class="bg-stone-900 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Pricing Categories</h2>
-                <p class="text-stone-400">Options tailored for everyday lunches, hearty dinners, or group celebrations.</p>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold mb-4">Pricing Categories</h2>
+                <p class="text-stone-400 max-w-lg mx-auto">Options tailored for everyday lunches, hearty dinners, or group celebrations.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Category 1 -->
                 <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Corporate Lunch</h3>
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Corporate Lunch</h3>
                         <p class="text-stone-400 text-sm mb-6">Perfect mid-day meal crafted for speed and satisfying flavor.</p>
-                        <div class="text-3xl font-black text-brand-gold mb-6">$14 – $16</div>
+                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$14 – $16</div>
                     </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3 rounded-xl transition-colors">Order Lunch</a>
+                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3.5 rounded-xl transition-colors">Order Lunch</a>
                 </div>
 
                 <!-- Category 2 -->
                 <div class="bg-stone-800 p-8 rounded-2xl border-2 border-brand-gold relative flex flex-col justify-between shadow-2xl">
-                    <span class="absolute -top-3 right-6 bg-brand-gold text-brand-dark text-xs font-black uppercase px-3 py-1 rounded-full">Popular</span>
+                    <span class="absolute -top-3.5 right-6 bg-brand-gold text-brand-dark text-xs font-extrabold uppercase px-3 py-1 rounded-full tracking-wider">Popular</span>
                     <div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Premium Plate</h3>
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Premium Plate</h3>
                         <p class="text-stone-400 text-sm mb-6">Generous portions with additional protein and side selections.</p>
-                        <div class="text-3xl font-black text-brand-gold mb-6">$18 – $20</div>
+                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$18 – $20</div>
                     </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold py-3 rounded-xl transition-colors">Order Premium</a>
+                    <a href="tel:6145409005" class="w-full text-center bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold py-3.5 rounded-xl transition-colors">Order Premium</a>
                 </div>
 
                 <!-- Category 3 -->
                 <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-2xl font-bold text-white mb-2">Catering Trays</h3>
-                        <p class="text-stone-400 text-sm mb-2">Jollof Social Surprises</p>
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Catering Trays</h3>
+                        <p class="text-brand-gold font-semibold text-sm mb-2">JOLLOF SOCIAL SURPRISES</p>
                         <p class="text-stone-400 text-xs mb-6">Ideal for parties, office events, and family gatherings.</p>
-                        <div class="text-3xl font-black text-brand-gold mb-6">$75 – $200+</div>
+                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$75 – $200+</div>
                     </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3 rounded-xl transition-colors">Inquire Catering</a>
+                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3.5 rounded-xl transition-colors">Inquire Catering</a>
                 </div>
             </div>
         </div>
@@ -176,12 +231,12 @@
     <section id="location" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mb-6">Visit & Connect</h2>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-stone-900 mb-6">Visit & Connect</h2>
                 <p class="text-stone-600 mb-8 leading-relaxed">Stop by to grab your food hot and fresh, or give us a call to schedule pickup and catering reservations.</p>
                 
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-stone-100 rounded-lg flex items-center justify-center text-brand-red flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div>
@@ -193,7 +248,7 @@
                     </div>
 
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-stone-100 rounded-lg flex items-center justify-center text-brand-red flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
@@ -203,7 +258,7 @@
                     </div>
 
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-stone-100 rounded-lg flex items-center justify-center text-brand-red flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                         <div>
@@ -214,7 +269,7 @@
                 </div>
             </div>
 
-            <!-- Google Map Embed Placeholder -->
+            <!-- Google Map Embed -->
             <div class="w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg border border-stone-200">
                 <iframe 
                     title="Jollof Social Location"
