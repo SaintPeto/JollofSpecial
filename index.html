@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jollof Social | West African Kitchen & Catering in Columbus, OH</title>
-<meta name="description" content="Jollof Social is a West African kitchen in Columbus, OH. Delivery, meal prep, surprise platters and event catering.">
+<meta name="description" content="Jollof Social is a West African kitchen in Columbus, OH. Corporate lunches, delivery, meal prep, surprise platters and event catering.">
 <link rel="canonical" href="https://www.jollofsocial.us/">
 <link rel="icon" type="image/jpeg" href="images/allinone.jpg">
 <meta property="og:type" content="restaurant">
@@ -12,76 +12,89 @@
 <meta property="og:title" content="Jollof Social | West African Kitchen & Catering">
 <meta property="og:description" content="Your lunch with a little more flavor. Columbus, OH.">
 <meta property="og:image" content="https://www.jollofsocial.us/images/allinone.jpg">
-<meta name="theme-color" content="#F1E7D3">
+<meta name="theme-color" content="#F7F2E8">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"infor@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Tailwind CDN for development -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: {
   fontFamily: { heading: ['"Cormorant Garamond"','serif'], sans: ['"Plus Jakarta Sans"','sans-serif'] },
-  colors: { brand: { dark:'#12100E', surface:'#1A1816', orange:'#D9531E', gold:'#D4AF37', light:'#FAF8F5', muted:'#A09890' } }
+  colors: { brand: { 
+    dark:'#211C1A',      /* Espresso / Charcoal */
+    cream:'#F7F2E8',     /* Warm Cream Background */
+    terracotta:'#C65D32',/* Terracotta Accents / Buttons */
+    gold:'#C79A45',      /* Golden Ochre */
+    sage:'#8A9274',      /* Soft Sage */
+    muted:'#8C827A' 
+  } }
 } } }
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
   .scrollbar-none::-webkit-scrollbar{display:none}
   section[id]{scroll-margin-top:7.5rem}
-  :focus-visible{outline:2px solid #D4AF37;outline-offset:2px}
+  :focus-visible{outline:2px solid #C79A45;outline-offset:2px}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{transition:none!important}}
 </style>
 </head>
-<body class="bg-[#F1E7D3] text-brand-dark font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen py-6 sm:py-10 px-4 sm:px-8 lg:px-12">
+<body class="bg-[#F7F2E8] text-brand-dark font-sans antialiased selection:bg-brand-terracotta selection:text-white min-h-screen py-6 sm:py-10 px-4 sm:px-8 lg:px-12">
 
 <div class="max-w-7xl mx-auto mb-16 sm:mb-0 space-y-6">
 
-  <!-- Section 1: Top Navigation Header (No Dropdown Menu, Minimal Nav with Lines) -->
+  <!-- Section 1: Top Navigation Header (Minimalist Underlined Nav) -->
   <header class="sticky top-2 z-50 rounded-2xl overflow-hidden shadow-lg bg-brand-dark text-white border-b border-stone-800 px-4 sm:px-10 py-3 flex items-center justify-between">
     <!-- Logo Left -->
     <a href="#" class="flex items-center" aria-label="Jollof Social home">
-      <img src="images/allinone.jpg" alt="Jollof Social logo" width="80" height="80" class="h-12 sm:h-20 w-auto rounded-lg shadow-lg bg-white p-1 border border-brand-orange/40">
+      <img src="images/allinone.jpg" alt="Jollof Social logo" width="80" height="80" class="h-12 sm:h-20 w-auto rounded-lg shadow-lg bg-white p-1 border border-brand-terracotta/40">
     </a>
 
-    <!-- Center Navigation Links (Underlined style like Akoko) -->
+    <!-- Center Navigation Links (Underlined line style) -->
     <nav aria-label="Quick links" class="flex items-center gap-3 sm:gap-6 overflow-x-auto text-[11px] sm:text-xs uppercase tracking-widest font-semibold whitespace-nowrap scrollbar-none py-1">
-      <a href="#corporate" class="relative py-1 text-stone-200 hover:text-brand-orange transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange/80">Corporate Lunch</a>
+      <a href="#corporate" class="relative py-1 text-stone-200 hover:text-brand-terracotta transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-terracotta/80">Corporate Lunch</a>
       <a href="#online-menu" class="relative py-1 text-stone-200 hover:text-brand-gold transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-gold/80">Delivery Menu</a>
-      <a href="#meal-prep" class="relative py-1 text-stone-200 hover:text-brand-orange transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange/80">Meal Prep</a>
+      <a href="#meal-prep" class="relative py-1 text-stone-200 hover:text-brand-terracotta transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-terracotta/80">Meal Prep</a>
       <a href="#js-surprise" class="relative py-1 text-stone-200 hover:text-brand-gold transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-gold/80">Surprise Platters</a>
-      <a href="#catering-form" class="relative py-1 text-brand-orange hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange">Inquire Catering</a>
+      <a href="#catering-form" class="relative py-1 text-brand-terracotta hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-terracotta">Inquire Catering</a>
     </nav>
 
     <!-- Phone Number Right -->
     <div class="hidden sm:flex items-center">
-      <a href="tel:6145409005" class="border-2 border-brand-orange bg-brand-orange/10 text-brand-orange hover:bg-brand-orange hover:text-white px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm tracking-widest font-bold transition-all">(614) 540-9005</a>
+      <a href="tel:6145409005" class="border-2 border-brand-terracotta bg-brand-terracotta/10 text-brand-terracotta hover:bg-brand-terracotta hover:text-white px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm tracking-widest font-bold transition-all">(614) 540-9005</a>
     </div>
   </header>
 
   <main class="flex flex-col gap-6">
 
-  <!-- Section 2: Hero Section (Background image back5.jpg, headline moved below image section) -->
+  <!-- Section 2: Hero Section (using back5.jpg as background image) -->
   <section class="rounded-2xl overflow-hidden shadow-md bg-white">
-    <!-- Image Display Area using back5.jpg -->
+    <!-- Image Display Area -->
     <div class="w-full h-[380px] sm:h-[500px] md:h-[600px] bg-cover bg-center" style="background-image: url('images/back5.jpg');"></div>
     
-    <!-- Text & Subtitle Area Below Section 2 Photo -->
-    <div class="py-8 px-6 text-center bg-stone-50 border-t border-stone-200">
-      <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-orange block mb-3">Columbus, Ohio • Culinary Excellence</span>
+    <!-- Text & Subtitle Area Below Photo -->
+    <div class="py-8 px-6 text-center bg-brand-cream border-t border-stone-200">
+      <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-terracotta block mb-3">Columbus, Ohio • Culinary Excellence</span>
       <h1 class="font-heading text-2xl sm:text-4xl md:text-5xl tracking-wide text-stone-900 leading-tight mb-4">Your lunch with a little more flavor.</h1>
       <p class="text-sm md:text-base text-stone-600 max-w-2xl mx-auto font-light leading-relaxed">Experience authentic West African gastronomy. Refined recipes prepared with bold heritage spices, high-quality ingredients, and uncompromising craft.</p>
     </div>
   </section>
 
   <!-- How to order -->
-  <section id="how-to-order" class="rounded-2xl overflow-hidden shadow-md py-14 px-6 sm:px-12 bg-stone-50">
+  <section id="how-to-order" class="rounded-2xl overflow-hidden shadow-md py-14 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto">
       <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 text-center mb-8">How to order</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-stone-700">
-        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-phone text-brand-orange mr-2" aria-hidden="true"></i>Call for pickup</h3><p>Call <a href="tel:6145409005" class="underline">614-540-9005</a> and we'll confirm a pickup time. Collect at 1282 Essex Ave.</p></div>
-        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-motorcycle text-brand-orange mr-2" aria-hidden="true"></i>Delivery</h3><p>Order on <a href="https://www.ubereats.com" id="uberLink" target="_blank" rel="noopener" class="underline">Uber Eats</a>. Delivery menu prices apply.</p></div>
-        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-utensils text-brand-orange mr-2" aria-hidden="true"></i>Offices & events</h3><p>Use the <a href="#catering-form" class="underline">catering form</a> for corporate lunches, meal prep and large orders.</p></div>
+        <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-phone text-brand-terracotta mr-2" aria-hidden="true"></i>Call for pickup</h3><p>Call <a href="tel:6145409005" class="underline">614-540-9005</a> and we'll confirm a pickup time. Collect at 1282 Essex Ave.</p></div>
+        <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-motorcycle text-brand-terracotta mr-2" aria-hidden="true"></i>Delivery</h3><p>Order on <a href="https://www.ubereats.com" id="uberLink" target="_blank" rel="noopener" class="underline">Uber Eats</a>. Delivery menu prices apply.</p></div>
+        <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-utensils text-brand-terracotta mr-2" aria-hidden="true"></i>Offices & events</h3><p>Use the <a href="#catering-form" class="underline">catering form</a> for corporate lunches, meal prep and large orders.</p></div>
       </div>
     </div>
   </section>
@@ -90,34 +103,34 @@ tailwind.config = { theme: { extend: {
   <section id="corporate" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Business & Executive Dining</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Business & Executive Dining</span>
         <h2 class="font-heading text-3xl sm:text-5xl text-stone-900 mt-2">Corporate Menu</h2>
         <p class="text-stone-600 text-sm mt-3">Per-person pricing for office and group orders. Delivery menu prices below are for single orders.</p>
-        <div class="w-16 h-[2px] bg-brand-orange mx-auto mt-4"></div>
+        <div class="w-16 h-[2px] bg-brand-terracotta mx-auto mt-4"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
-        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-orange/30">Main Entrées</h3><ul id="corpMain" class="space-y-6 text-sm sm:text-base"></ul></div>
-        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-orange/30">Side Accompaniments</h3><ul id="corpSide" class="space-y-6 text-sm sm:text-base"></ul></div>
+        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-terracotta/30">Main Entrées</h3><ul id="corpMain" class="space-y-6 text-sm sm:text-base"></ul></div>
+        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-terracotta/30">Side Accompaniments</h3><ul id="corpSide" class="space-y-6 text-sm sm:text-base"></ul></div>
       </div>
     </div>
   </section>
 
   <!-- Online menu -->
-  <section id="online-menu" class="rounded-2xl overflow-hidden shadow-md py-24 px-6 sm:px-12 bg-cover bg-center text-white" style="background-image:linear-gradient(rgba(18,16,14,.65),rgba(18,16,14,.75)),url('images/back2.jpg');">
+  <section id="online-menu" class="rounded-2xl overflow-hidden shadow-md py-24 px-6 sm:px-12 bg-brand-dark text-white">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-gold block">Doorstep Delivery & Kitchen Pickup</span>
         <h2 class="font-heading text-3xl sm:text-5xl mt-2">Online Delivery Menu</h2>
         <div class="flex items-center justify-center gap-4 mt-4">
           <span class="text-stone-300 text-xs tracking-widest uppercase">Available on</span>
-          <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-black hover:bg-stone-800 text-white text-xs font-bold px-4 py-2 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
+          <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
         <div><h3 class="font-heading text-2xl text-brand-gold mb-8 pb-3 border-b-2 border-brand-gold/40">Main Selection</h3><ul id="onMain" class="space-y-5 text-sm sm:text-base"></ul></div>
         <div class="flex flex-col justify-between">
           <div><h3 class="font-heading text-2xl text-brand-gold mb-8 pb-3 border-b-2 border-brand-gold/40">Add-Ons & Extras</h3><ul id="onExtra" class="space-y-5 text-sm sm:text-base mb-12"></ul></div>
-          <div class="p-8 border border-brand-gold/40 text-center bg-brand-dark/85 rounded-xl">
+          <div class="p-8 border border-brand-gold/40 text-center bg-stone-900 rounded-xl">
             <h4 class="font-heading text-2xl text-brand-gold">Direct Kitchen Pickup</h4>
             <p class="text-xs sm:text-sm text-stone-300 mt-2">Call <a href="tel:6145409005" class="underline">614-540-9005</a> to place a pickup order, then collect at 1282 Essex Ave, Columbus, OH.</p>
           </div>
@@ -127,22 +140,22 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Meal prep & platters -->
-  <section id="meal-prep" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-stone-50">
+  <section id="meal-prep" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
       <div>
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Home & Executive Provisioning</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Home & Executive Provisioning</span>
         <h2 class="font-heading text-3xl text-stone-900 mt-2 mb-8">Meal Prep Services</h2>
         <div id="prep" class="space-y-6 text-sm sm:text-base"></div>
       </div>
       <div id="js-surprise" class="scroll-mt-32">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Feasts & Group Gatherings</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Feasts & Group Gatherings</span>
         <h2 class="font-heading text-3xl text-stone-900 mt-2 mb-8">JS Surprise Platters</h2>
-        <div class="p-8 border border-stone-300 bg-white shadow-sm rounded-xl">
+        <div class="p-8 border border-stone-300 bg-brand-cream shadow-sm rounded-xl">
           <h3 class="font-heading text-2xl text-stone-900 mb-2">Jollof Social Surprise Platter</h3>
           <p class="text-stone-600 text-sm leading-relaxed mb-6 font-light">Curated multi-layered tasting platter for private events and social gatherings.</p>
           <div class="grid grid-cols-2 gap-4 text-center">
-            <div class="p-4 bg-stone-50 border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">5 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$120</span></div>
-            <div class="p-4 bg-stone-50 border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">10 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$235</span></div>
+            <div class="p-4 bg-white border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">5 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$120</span></div>
+            <div class="p-4 bg-white border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">10 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$235</span></div>
           </div>
         </div>
       </div>
@@ -153,31 +166,54 @@ tailwind.config = { theme: { extend: {
   <section id="catering-form" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Custom Events & Gatherings</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Custom Events & Gatherings</span>
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
         <p class="text-stone-600 text-sm mt-2">Packages range from $75 – $500+. Send the form and we'll reply with a custom quote.</p>
       </div>
-      <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-stone-50 p-6 sm:p-8 rounded-2xl border border-stone-200">
+      <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-brand-cream p-6 sm:p-8 rounded-2xl border border-stone-200 overflow-hidden">
         <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="New catering inquiry - Jollof Social">
+        
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div><label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label><input id="f-name" type="text" name="name" required autocomplete="name" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
-          <div><label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label><input id="f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="(614) 000-0000" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+          <div class="w-full">
+            <label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
+            <input id="f-name" type="text" name="name" required autocomplete="name" placeholder="John Doe" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
+          </div>
+          <div class="w-full">
+            <label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
+            <input id="f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="(614) 000-0000" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
+          </div>
         </div>
-        <div><label for="f-email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Email</label><input id="f-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+        
+        <div class="w-full">
+          <label for="f-email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Email</label>
+          <input id="f-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div><label for="f-date" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Date</label><input id="f-date" type="date" name="event_date" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
-          <div><label for="f-guests" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Estimated Guest Count</label><input id="f-guests" type="number" min="1" name="guests" placeholder="25" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+          <div class="w-full min-w-0">
+            <label for="f-date" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Date</label>
+            <input id="f-date" type="date" name="event_date" class="w-full max-w-full box-border px-3 sm:px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm appearance-none bg-white">
+          </div>
+          <div class="w-full min-w-0">
+            <label for="f-guests" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Estimated Guest Count</label>
+            <input id="f-guests" type="number" min="1" name="guests" placeholder="25" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm bg-white">
+          </div>
         </div>
-        <div><label for="f-msg" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Details / Menu Preferences</label><textarea id="f-msg" name="message" rows="4" placeholder="Tell us about your event..." class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></textarea></div>
-        <button type="submit" id="formBtn" class="w-full bg-brand-orange hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send catering inquiry</button>
+
+        <div class="w-full">
+          <label for="f-msg" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Details / Menu Preferences</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Tell us about your event..." class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm"></textarea>
+        </div>
+
+        <button type="submit" id="formBtn" class="w-full bg-brand-terracotta hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send catering inquiry</button>
         <p id="formMsg" role="status" class="text-sm text-center min-h-[1.25rem]"></p>
       </form>
     </div>
   </section>
 
   <!-- Social links -->
-  <section id="reviews" class="rounded-2xl overflow-hidden shadow-md py-16 px-6 sm:px-12 bg-stone-900 text-white text-center">
+  <section id="reviews" class="rounded-2xl overflow-hidden shadow-md py-16 px-6 sm:px-12 bg-brand-dark text-white text-center">
     <h2 class="font-heading text-3xl sm:text-4xl mb-4">See what guests are saying</h2>
     <p class="text-stone-300 text-sm max-w-xl mx-auto mb-6">Follow our kitchen for recent dishes and customer posts.</p>
     <div class="flex justify-center gap-4 text-xs uppercase tracking-wider font-semibold">
@@ -195,27 +231,27 @@ tailwind.config = { theme: { extend: {
         <p class="text-stone-700 leading-relaxed mb-4 font-light">Jollof Social is a Columbus-based West African culinary establishment dedicated to authentic heritage recipes, artisanal stews, and elevated hospitality.</p>
         <p class="text-stone-700 leading-relaxed font-light">From corporate lunch dining to kitchen pickup and custom event catering, we offer an authentic taste of West African traditions prepared with precision.</p>
       </div>
-      <div id="hours" class="p-8 bg-stone-50 border border-stone-200 rounded-xl">
+      <div id="hours" class="p-8 bg-brand-cream border border-stone-200 rounded-xl">
         <h3 class="font-heading text-2xl text-stone-900 mb-6 border-b border-stone-200 pb-3">Operating Hours</h3>
         <ul class="space-y-4 text-stone-700">
           <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">11:00 AM – 9:00 PM</span></li>
           <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">12:00 PM – 10:00 PM</span></li>
-          <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-brand-orange">Catering & Orders Only</span></li>
+          <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-brand-terracotta">Catering & Orders Only</span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Location -->
-  <section id="location" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-stone-50">
+  <section id="location" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
       <div>
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block mb-2">Get In Touch</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block mb-2">Get In Touch</span>
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mb-8">Location & Contact</h2>
         <div class="space-y-8">
-          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Kitchen Address</h3><a href="https://maps.google.com/?q=1282+Essex+ave+Columbus+Ohio+43201" target="_blank" rel="noopener" class="text-stone-800 hover:text-brand-orange font-medium">1282 Essex Ave, Columbus, OH 43201</a></div>
-          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Telephone</h3><a href="tel:6145409005" class="text-stone-800 hover:text-brand-orange font-medium">614-540-9005</a></div>
-          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Email</h3><a href="mailto:info@jollofsocial.us" class="text-stone-800 hover:text-brand-orange font-medium">info@jollofsocial.us</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Kitchen Address</h3><a href="https://maps.google.com/?q=1282+Essex+ave+Columbus+Ohio+43201" target="_blank" rel="noopener" class="text-stone-800 hover:text-brand-terracotta font-medium">1282 Essex Ave, Columbus, OH 43201</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Telephone</h3><a href="tel:6145409005" class="text-stone-800 hover:text-brand-terracotta font-medium">614-540-9005</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Email</h3><a href="mailto:infor@jollofsocial.us" class="text-stone-800 hover:text-brand-terracotta font-medium">infor@jollofsocial.us</a></div>
         </div>
       </div>
       <div class="w-full h-80 lg:h-96 border border-stone-300 rounded-xl overflow-hidden shadow-sm">
@@ -232,8 +268,8 @@ tailwind.config = { theme: { extend: {
 
 <!-- Mobile Bar for Phones -->
 <div class="fixed bottom-0 left-0 right-0 bg-brand-dark/95 backdrop-blur-md border-t border-stone-800 p-3 sm:hidden z-40 flex items-center gap-2">
-  <a href="tel:6145409005" class="flex-1 text-center bg-stone-800 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-phone mr-1 text-brand-orange" aria-hidden="true"></i> Call Us</a>
-  <a href="#how-to-order" class="flex-1 text-center bg-brand-orange text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-bag-shopping mr-1" aria-hidden="true"></i> Order</a>
+  <a href="tel:6145409005" class="flex-1 text-center bg-stone-800 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-phone mr-1 text-brand-terracotta" aria-hidden="true"></i> Call Us</a>
+  <a href="#how-to-order" class="flex-1 text-center bg-brand-terracotta text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-bag-shopping mr-1" aria-hidden="true"></i> Order</a>
 </div>
 
 <script>
@@ -266,7 +302,7 @@ document.getElementById('cateringForm').addEventListener('submit', async e => {
     if (!r.ok) throw new Error();
     f.reset(); msg.className = 'text-sm text-center text-green-700'; msg.textContent = 'Thank you! We received your inquiry and will contact you soon.';
   } catch {
-    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email info@jollofsocial.us.';
+    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email infor@jollofsocial.us.';
   }
   btn.disabled = false; btn.textContent = 'Send catering inquiry';
 });
