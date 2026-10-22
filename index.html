@@ -91,7 +91,16 @@ tailwind.config = { theme: { extend: {
       <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 text-center mb-8">How to order</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-stone-700">
         <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-phone text-brand-terracotta mr-2" aria-hidden="true"></i>Call for pickup</h3><p>Call <a href="tel:6145409005" class="underline">614-540-9005</a> and we'll confirm a pickup time. Collect at 1282 Essex Ave.</p></div>
-        <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-motorcycle text-brand-terracotta mr-2" aria-hidden="true"></i>Delivery</h3><p>Order on <a href="https://www.ubereats.com" id="uberLink" target="_blank" rel="noopener" class="underline">Uber Eats</a>. Delivery menu prices apply.</p></div>
+        <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl">
+          <h3 class="font-bold text-stone-900 mb-2"><i class="fa-solid fa-motorcycle text-brand-terracotta mr-2" aria-hidden="true"></i>Delivery Partners</h3>
+          <p class="mb-3">Order on your favorite platform. Delivery menu prices apply.</p>
+          <div class="flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="https://www.ubereats.com" class="uberLink underline text-stone-800 hover:text-brand-terracotta" target="_blank" rel="noopener">Uber Eats</a> •
+            <a href="https://www.doordash.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">DoorDash</a> •
+            <a href="https://www.grubhub.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">Grubhub</a> •
+            <a href="https://www.fooda.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">Fooda</a>
+          </div>
+        </div>
         <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-utensils text-brand-terracotta mr-2" aria-hidden="true"></i>Offices & events</h3><p>Use the <a href="#catering-form" class="underline">catering form</a> for corporate lunches, meal prep and large orders.</p></div>
       </div>
     </div>
@@ -119,11 +128,27 @@ tailwind.config = { theme: { extend: {
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-gold block">Doorstep Delivery & Kitchen Pickup</span>
         <h2 class="font-heading text-3xl sm:text-5xl mt-2">Online Delivery Menu</h2>
-        <div class="flex items-center justify-center gap-4 mt-4">
-          <span class="text-stone-300 text-xs tracking-widest uppercase">Available on</span>
-          <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
+        
+        <!-- Multi-Platform Delivery Links -->
+        <div class="flex flex-col items-center justify-center gap-3 mt-6">
+          <span class="text-stone-300 text-xs tracking-widest uppercase">Available on Delivery Platforms</span>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
+              <i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats
+            </a>
+            <a href="https://www.doordash.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
+              <i class="fa-solid fa-bag-shopping text-brand-gold" aria-hidden="true"></i> DoorDash
+            </a>
+            <a href="https://www.grubhub.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
+              <i class="fa-solid fa-utensils text-brand-gold" aria-hidden="true"></i> Grubhub
+            </a>
+            <a href="https://www.fooda.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
+              <i class="fa-solid fa-building text-brand-gold" aria-hidden="true"></i> Fooda
+            </a>
+          </div>
         </div>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
         <div><h3 class="font-heading text-2xl text-brand-gold mb-8 pb-3 border-b-2 border-brand-gold/40">Main Selection</h3><ul id="onMain" class="space-y-5 text-sm sm:text-base"></ul></div>
         <div class="flex flex-col justify-between">
