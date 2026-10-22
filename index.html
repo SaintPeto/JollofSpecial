@@ -1,347 +1,343 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jollof Social | Authentic West African Eats in Columbus, OH</title>
-    <!-- Google Fonts: Playfair Display for headings & Plus Jakarta Sans for body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        heading: ['"Playfair Display"', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            red: '#D9381E',
-                            gold: '#F4A261',
-                            dark: '#1C1917',
-                            light: '#FAFAF9',
-                            green: '#2A9D8F'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jollof Social | West African Kitchen & Catering in Columbus, OH</title>
+<meta name="description" content="Jollof Social is a West African kitchen in Columbus, OH. Corporate lunches, delivery, meal prep, surprise platters and event catering.">
+<link rel="canonical" href="https://www.jollofsocial.us/">
+<link rel="icon" type="image/jpeg" href="images/allinone.jpg">
+<meta property="og:type" content="restaurant">
+<meta property="og:url" content="https://www.jollofsocial.us/">
+<meta property="og:title" content="Jollof Social | West African Kitchen & Catering">
+<meta property="og:description" content="Your lunch with a little more flavor. Columbus, OH.">
+<meta property="og:image" content="https://www.jollofsocial.us/images/allinone.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"infor@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- NOTE: Tailwind CDN is for development. Before launch, build CSS with the Tailwind CLI and replace this script with a <link> to the compiled file. -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { heading: ['"Cormorant Garamond"','serif'], sans: ['"Plus Jakarta Sans"','sans-serif'] },
+  colors: { brand: { dark:'#12100E', surface:'#1A1816', orange:'#D9531E', gold:'#D4AF37', light:'#FAF8F5', muted:'#A09890' } }
+} } }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .scrollbar-none::-webkit-scrollbar{display:none}
+  section[id]{scroll-margin-top:7.5rem}
+  :focus-visible{outline:2px solid #D4AF37;outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{transition:none!important}}
+</style>
 </head>
-<body class="bg-brand-light text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+<body class="bg-stone-950 text-brand-dark font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen py-4 sm:py-8 px-3 sm:px-6 lg:px-12">
 
-    <!-- Sticky Navigation -->
-    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="font-heading font-extrabold text-2xl tracking-wider text-brand-gold flex items-center gap-2">
-                <i class="fa-solid fa-fire text-brand-red"></i>
-                JOLLOF SOCIAL
-            </a>
-            
-            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase">
-                <a href="#menu" class="hover:text-brand-gold transition-colors">Menu</a>
-                <a href="#pricing" class="hover:text-brand-gold transition-colors">Pricing Tiers</a>
-                <a href="#location" class="hover:text-brand-gold transition-colors">Location</a>
-            </nav>
+<!-- Page background: sized to the screen (not the whole page), so the photo isn't stretched or blurry -->
+<div aria-hidden="true" class="fixed inset-0 -z-10 bg-stone-950 bg-no-repeat bg-cover bg-center" style="background-image:linear-gradient(rgba(18,16,14,.45),rgba(18,16,14,.65)),url('images/back2.jpg');"></div>
 
-            <a href="tel:6145409005" class="bg-brand-red hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-full transition-all flex items-center gap-2 shadow-lg hover:shadow-brand-red/30">
-                <i class="fa-solid fa-phone"></i>
-                <span>(614) 540-9005</span>
-            </a>
-        </div>
+<div class="max-w-7xl mx-auto bg-brand-light/95 backdrop-blur-md rounded-2xl shadow-2xl border border-stone-800/80 mb-16 sm:mb-0">
+
+  <!-- One sticky wrapper keeps header and filter bar aligned at any height -->
+  <div class="sticky top-0 z-50 rounded-t-2xl overflow-hidden">
+    <header class="bg-brand-dark/95 backdrop-blur-md text-white border-b border-stone-800 px-4 sm:px-10 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-4 sm:gap-8">
+        <button id="menuBtn" type="button" onclick="toggleSidebar()" aria-expanded="false" aria-controls="sidebar" class="text-stone-300 hover:text-brand-orange flex items-center gap-3 tracking-widest uppercase text-xs font-semibold transition-colors" aria-label="Open menu">
+          <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i><span class="hidden sm:inline">Menu</span>
+        </button>
+        <a href="#" class="flex items-center" aria-label="Jollof Social home">
+          <img src="images/allinone.jpg" alt="Jollof Social logo" width="80" height="80" class="h-12 sm:h-20 w-auto rounded-lg shadow-lg bg-white p-1 border border-brand-orange/40">
+        </a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#how-to-order" class="hidden md:inline-flex items-center gap-2 bg-brand-orange hover:bg-white hover:text-brand-dark text-white px-5 py-3 rounded-xl text-xs tracking-widest uppercase font-bold transition-all border border-brand-orange">
+          <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> How to Order
+        </a>
+        <a href="tel:6145409005" class="border-2 border-brand-orange bg-brand-orange/10 text-brand-orange hover:bg-brand-orange hover:text-white px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm tracking-widest font-bold transition-all">(614) 540-9005</a>
+      </div>
     </header>
+    <!-- Filter bar hidden on phones (bottom bar covers it) -->
+    <nav aria-label="Quick links" class="hidden sm:block bg-brand-dark text-stone-300 border-b border-stone-800 py-3 px-6">
+      <div class="max-w-5xl mx-auto flex items-center justify-start lg:justify-center gap-3 overflow-x-auto text-xs uppercase tracking-wider font-semibold whitespace-nowrap scrollbar-none">
+        <a href="#corporate" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-orange hover:text-brand-orange transition-colors">Corporate Lunch</a>
+        <a href="#online-menu" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-gold hover:text-brand-gold transition-colors">Delivery Menu</a>
+        <a href="#meal-prep" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-orange hover:text-brand-orange transition-colors">Meal Prep</a>
+        <a href="#js-surprise" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-gold hover:text-brand-gold transition-colors">Surprise Platters</a>
+        <a href="#catering-form" class="px-4 py-2 rounded-full border border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white transition-colors">Inquire Catering</a>
+      </div>
+    </nav>
+  </div>
 
-    <!-- Hero / Splash Section -->
-    <section class="relative bg-brand-dark text-white py-20 md:py-28 overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#F4A261_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-center lg:text-left">
-                    <span class="inline-block bg-brand-gold/20 text-brand-gold font-semibold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest mb-6 border border-brand-gold/30">
-                        Columbus, Ohio • Authentic West African Cuisine
-                    </span>
-                    <h1 class="font-heading text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
-                        Taste the Tradition, <br/>
-                        <span class="text-brand-gold italic">Share the Experience.</span>
-                    </h1>
-                    <p class="text-lg text-stone-300 max-w-xl mx-auto lg:mx-0 mb-8 font-light">
-                        Crafted with bold spices, rich flavors, and local love. Build your plate or order custom catering for your next big gathering.
-                    </p>
-                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <a href="#menu" class="bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-xl transition-all shadow-lg hover:scale-105 text-center">
-                            Build Your Plate
-                        </a>
-                        <a href="#pricing" class="bg-stone-800 hover:bg-stone-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-stone-700 text-center">
-                            Catering & Packages
-                        </a>
-                    </div>
-                </div>
+  <main>
+  <!-- Hero -->
+  <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-6 text-center border-b border-stone-800" style="background-image:linear-gradient(rgba(18,16,14,.55),rgba(18,16,14,.70)),url('images/back3.jpg');">
+    <div class="max-w-4xl mx-auto">
+      <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-gold block mb-6">Columbus, Ohio • Culinary Excellence</span>
+      <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-wide mb-8 leading-tight drop-shadow-lg">Your lunch with a little more flavor.</h1>
+      <p class="text-base md:text-lg text-stone-200 max-w-2xl mx-auto mb-10 font-light leading-relaxed">Experience authentic West African gastronomy. Refined recipes prepared with bold heritage spices, high-quality ingredients, and uncompromising craft.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-5">
+        <a href="#corporate" class="bg-brand-orange text-white hover:bg-white hover:text-brand-dark font-semibold px-8 py-4 text-xs uppercase tracking-[0.2em] transition-all border border-brand-orange">Corporate Menu</a>
+        <a href="#how-to-order" class="bg-brand-dark/80 border border-stone-400 hover:border-white text-stone-200 hover:text-white font-semibold px-8 py-4 text-xs uppercase tracking-[0.2em] transition-all">How to Order</a>
+      </div>
+    </div>
+  </section>
 
-                <!-- Splash Screen Image -->
-                <div class="relative max-w-md mx-auto lg:max-w-none">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-gold/20">
-                        <img 
-                            src="images/allinone.jpg" 
-                            alt="Jollof Social All In One Feast" 
-                            class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
-                        />
-                        <div class="absolute bottom-4 left-4 bg-brand-dark/90 backdrop-blur-md text-white px-4 py-2 rounded-xl text-sm font-semibold border border-stone-700">
-                            🔥 Hot & Fresh Daily
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- How to order -->
+  <section id="how-to-order" class="py-14 px-6 sm:px-12 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 text-center mb-8">How to order</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-stone-700">
+        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-phone text-brand-orange mr-2" aria-hidden="true"></i>Call for pickup</h3><p>Call <a href="tel:6145409005" class="underline">614-540-9005</a> and we'll confirm a pickup time. Collect at 1282 Essex Ave.</p></div>
+        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-motorcycle text-brand-orange mr-2" aria-hidden="true"></i>Delivery</h3><p>Order on <a href="https://www.ubereats.com" id="uberLink" target="_blank" rel="noopener" class="underline">Uber Eats</a>. Delivery menu prices apply.</p></div>
+        <div class="p-6 bg-white border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-utensils text-brand-orange mr-2" aria-hidden="true"></i>Offices & events</h3><p>Use the <a href="#catering-form" class="underline">catering form</a> for corporate lunches, meal prep and large orders.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate -->
+  <section id="corporate" class="py-20 px-6 sm:px-12 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Business & Executive Dining</span>
+        <h2 class="font-heading text-3xl sm:text-5xl text-stone-900 mt-2">Corporate Menu</h2>
+        <p class="text-stone-600 text-sm mt-3">Per-person pricing for office and group orders. Delivery menu prices below are for single orders.</p>
+        <div class="w-16 h-[2px] bg-brand-orange mx-auto mt-4"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
+        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-orange/30">Main Entrées</h3><ul id="corpMain" class="space-y-6 text-sm sm:text-base"></ul></div>
+        <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-orange/30">Side Accompaniments</h3><ul id="corpSide" class="space-y-6 text-sm sm:text-base"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online menu -->
+  <section id="online-menu" class="py-24 px-6 sm:px-12 bg-cover bg-center text-white border-t border-stone-800" style="background-image:linear-gradient(rgba(18,16,14,.65),rgba(18,16,14,.75)),url('images/back2.jpg');">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-gold block">Doorstep Delivery & Kitchen Pickup</span>
+        <h2 class="font-heading text-3xl sm:text-5xl mt-2">Online Delivery Menu</h2>
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <span class="text-stone-300 text-xs tracking-widest uppercase">Available on</span>
+          <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-black hover:bg-stone-800 text-white text-xs font-bold px-4 py-2 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
         </div>
-    </section>
-
-    <!-- Interactive Itemized Menu Section -->
-    <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="font-heading text-3xl sm:text-5xl font-black text-stone-900 mb-4">Craft Your Plate</h2>
-            <p class="text-stone-600 max-w-xl mx-auto text-lg">Select your base, pair it with savory protein, add rich sides, and finish with our signature pepper sauces.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
+        <div><h3 class="font-heading text-2xl text-brand-gold mb-8 pb-3 border-b-2 border-brand-gold/40">Main Selection</h3><ul id="onMain" class="space-y-5 text-sm sm:text-base"></ul></div>
+        <div class="flex flex-col justify-between">
+          <div><h3 class="font-heading text-2xl text-brand-gold mb-8 pb-3 border-b-2 border-brand-gold/40">Add-Ons & Extras</h3><ul id="onExtra" class="space-y-5 text-sm sm:text-base mb-12"></ul></div>
+          <div class="p-8 border border-brand-gold/40 text-center bg-brand-dark/85 rounded-xl">
+            <h4 class="font-heading text-2xl text-brand-gold">Direct Kitchen Pickup</h4>
+            <p class="text-xs sm:text-sm text-stone-300 mt-2">Call <a href="tel:6145409005" class="underline">614-540-9005</a> to place a pickup order, then collect at 1282 Essex Ave, Columbus, OH.</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Category 1: Base -->
-        <div class="mb-16">
-            <div class="flex items-center gap-3 mb-8">
-                <span class="bg-amber-100 text-brand-gold font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">1</span>
-                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Choose Base</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Jollof Rice -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/jollof.jpg" alt="Jollof Rice" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Jollof Rice</h4>
-                    </div>
-                </div>
-                <!-- Fried Rice -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/friedrice.jpg" alt="Fried Rice" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Rice</h4>
-                    </div>
-                </div>
-                <!-- Waakye -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/waakye.jpg" alt="Waakye" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Waakye (Rice & Beans)</h4>
-                    </div>
-                </div>
-            </div>
+  <!-- Meal prep & platters -->
+  <section id="meal-prep" class="py-20 px-6 sm:px-12 bg-stone-50">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Home & Executive Provisioning</span>
+        <h2 class="font-heading text-3xl text-stone-900 mt-2 mb-8">Meal Prep Services</h2>
+        <div id="prep" class="space-y-6 text-sm sm:text-base"></div>
+      </div>
+      <div id="js-surprise" class="scroll-mt-32">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Feasts & Group Gatherings</span>
+        <h2 class="font-heading text-3xl text-stone-900 mt-2 mb-8">JS Surprise Platters</h2>
+        <div class="p-8 border border-stone-300 bg-white shadow-sm rounded-xl">
+          <h3 class="font-heading text-2xl text-stone-900 mb-2">Jollof Social Surprise Platter</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-6 font-light">Curated multi-layered tasting platter for private events and social gatherings.</p>
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div class="p-4 bg-stone-50 border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">5 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$120</span></div>
+            <div class="p-4 bg-stone-50 border border-stone-200 rounded-lg"><span class="text-[10px] text-stone-600 uppercase font-bold tracking-widest block">10 Servings</span><span class="font-heading text-2xl font-bold text-stone-900">$235</span></div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Category 2: Protein -->
-        <div class="mb-16">
-            <div class="flex items-center gap-3 mb-8">
-                <span class="bg-red-100 text-brand-red font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">2</span>
-                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Pick Protein</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Fried Chicken -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/friedchicken.jpg" alt="Fried Chicken" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Chicken</h4>
-                    </div>
-                </div>
-                <!-- Fried Fish -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/friedfish.jpg" alt="Fried Fish" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Fish</h4>
-                    </div>
-                </div>
-                <!-- Fried Beef -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/friedbeef.jpg" alt="Fried Beef" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Beef</h4>
-                    </div>
-                </div>
-                <!-- Pepper Gizzard -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/peppergizzard.jpg" alt="Pepper Gizzard" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Pepper Gizzard</h4>
-                    </div>
-                </div>
-            </div>
+  <!-- Catering form -->
+  <section id="catering-form" class="py-20 px-6 sm:px-12 bg-white border-t border-stone-200">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Custom Events & Gatherings</span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
+        <p class="text-stone-600 text-sm mt-2">Packages range from $75 – $500+. Send the form and we'll reply with a custom quote.</p>
+      </div>
+      <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+      <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-stone-50 p-6 sm:p-8 rounded-2xl border border-stone-200">
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="_subject" value="New catering inquiry - Jollof Social">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div><label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label><input id="f-name" type="text" name="name" required autocomplete="name" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+          <div><label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label><input id="f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="(614) 000-0000" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
         </div>
-
-        <!-- Category 3: Sides -->
-        <div class="mb-16">
-            <div class="flex items-center gap-3 mb-8">
-                <span class="bg-emerald-100 text-brand-green font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">3</span>
-                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Add Sides</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Fried Plantains -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/friedplantain.jpg" alt="Fried Plantains" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Fried Plantains</h4>
-                    </div>
-                </div>
-                <!-- Coleslaw -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/coleslaw.jpg" alt="Coleslaw" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Coleslaw</h4>
-                    </div>
-                </div>
-            </div>
+        <div><label for="f-email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Email</label><input id="f-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div><label for="f-date" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Date</label><input id="f-date" type="date" name="event_date" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
+          <div><label for="f-guests" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Estimated Guest Count</label><input id="f-guests" type="number" min="1" name="guests" placeholder="25" class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></div>
         </div>
+        <div><label for="f-msg" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Details / Menu Preferences</label><textarea id="f-msg" name="message" rows="4" placeholder="Tell us about your event..." class="w-full px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-orange text-sm"></textarea></div>
+        <button type="submit" id="formBtn" class="w-full bg-brand-orange hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send catering inquiry</button>
+        <p id="formMsg" role="status" class="text-sm text-center min-h-[1.25rem]"></p>
+      </form>
+    </div>
+  </section>
 
-        <!-- Category 4: Sauce -->
-        <div>
-            <div class="flex items-center gap-3 mb-8">
-                <span class="bg-stone-100 text-stone-800 font-black w-10 h-10 rounded-xl flex items-center justify-center text-lg shadow-md">4</span>
-                <h3 class="font-heading text-2xl font-extrabold text-stone-900">Top Sauce</h3>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Shito -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/shito.jpg" alt="Shito" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Shito</h4>
-                    </div>
-                </div>
-                <!-- Pepper Sauce -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
-                    <img src="images/peppersauce.jpg" alt="Pepper Sauce" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-heading font-bold text-lg text-stone-900">Pepper Sauce</h4>
-                    </div>
-                </div>
-            </div>
+  <!-- Reviews: fake testimonials removed. Add real quotes (with permission) here. -->
+  <section id="reviews" class="py-16 px-6 sm:px-12 bg-stone-900 text-white border-t border-stone-800 text-center">
+    <h2 class="font-heading text-3xl sm:text-4xl mb-4">See what guests are saying</h2>
+    <p class="text-stone-300 text-sm max-w-xl mx-auto mb-6">Follow our kitchen for recent dishes and customer posts.</p>
+    <div class="flex justify-center gap-4 text-xs uppercase tracking-wider font-semibold">
+      <a href="https://instagram.com/jollof.social.co" target="_blank" rel="noopener" class="px-5 py-3 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark rounded-lg"><i class="fa-brands fa-instagram mr-1" aria-hidden="true"></i> Instagram</a>
+      <a href="https://tiktok.com/@jollof.social.co" target="_blank" rel="noopener" class="px-5 py-3 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark rounded-lg"><i class="fa-brands fa-tiktok mr-1" aria-hidden="true"></i> TikTok</a>
+    </div>
+  </section>
+
+  <!-- About & hours -->
+  <section id="about" class="py-20 px-6 sm:px-12 bg-white border-t border-stone-200">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-stone-600 block mb-2">Our Story</span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mb-6">About Jollof Social</h2>
+        <p class="text-stone-700 leading-relaxed mb-4 font-light">Jollof Social is a Columbus-based West African culinary establishment dedicated to authentic heritage recipes, artisanal stews, and elevated hospitality.</p>
+        <p class="text-stone-700 leading-relaxed font-light">From corporate lunch dining to kitchen pickup and custom event catering, we offer an authentic taste of West African traditions prepared with precision.</p>
+      </div>
+      <div id="hours" class="p-8 bg-stone-50 border border-stone-200 rounded-xl">
+        <h3 class="font-heading text-2xl text-stone-900 mb-6 border-b border-stone-200 pb-3">Operating Hours</h3>
+        <ul class="space-y-4 text-stone-700">
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">11:00 AM – 9:00 PM</span></li>
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">12:00 PM – 10:00 PM</span></li>
+          <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-brand-orange">Catering & Orders Only</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="py-20 px-6 sm:px-12 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block mb-2">Get In Touch</span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mb-8">Location & Contact</h2>
+        <div class="space-y-8">
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Kitchen Address</h3><a href="https://maps.google.com/?q=1282+Essex+ave+Columbus+Ohio+43201" target="_blank" rel="noopener" class="text-stone-800 hover:text-brand-orange font-medium">1282 Essex Ave, Columbus, OH 43201</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Telephone</h3><a href="tel:6145409005" class="text-stone-800 hover:text-brand-orange font-medium">614-540-9005</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Email</h3><a href="mailto:infor@jollofsocial.us" class="text-stone-800 hover:text-brand-orange font-medium">info@jollofsocial.us</a></div>
         </div>
-    </section>
+      </div>
+      <div class="w-full h-80 lg:h-96 border border-stone-300 rounded-xl overflow-hidden shadow-sm">
+        <iframe title="Map of Jollof Social, 1282 Essex Ave, Columbus" src="https://maps.google.com/maps?q=1282%20Essex%20ave%20Columbus%20Ohio%2043201&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  </main>
 
-    <!-- Pricing Categories -->
-    <section id="pricing" class="bg-stone-900 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold mb-4">Pricing Categories</h2>
-                <p class="text-stone-400 max-w-lg mx-auto">Options tailored for everyday lunches, hearty dinners, or group celebrations.</p>
-            </div>
+  <footer class="bg-brand-dark text-stone-400 py-10 border-t border-stone-800 text-center text-xs tracking-wider uppercase rounded-b-2xl">
+    <p>&copy; 2026 Jollof Social. <a href="https://www.jollofsocial.us" class="text-brand-gold hover:text-white">www.jollofsocial.us</a>. All rights reserved.</p>
+  </footer>
+</div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Category 1 -->
-                <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Corporate Lunch</h3>
-                        <p class="text-stone-400 text-sm mb-6">Perfect mid-day meal crafted for speed and satisfying flavor.</p>
-                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$14 – $16</div>
-                    </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3.5 rounded-xl transition-colors">Order Lunch</a>
-                </div>
-
-                <!-- Category 2 -->
-                <div class="bg-stone-800 p-8 rounded-2xl border-2 border-brand-gold relative flex flex-col justify-between shadow-2xl">
-                    <span class="absolute -top-3.5 right-6 bg-brand-gold text-brand-dark text-xs font-extrabold uppercase px-3 py-1 rounded-full tracking-wider">Popular</span>
-                    <div>
-                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Premium Plate</h3>
-                        <p class="text-stone-400 text-sm mb-6">Generous portions with additional protein and side selections.</p>
-                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$18 – $20</div>
-                    </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-brand-gold hover:bg-amber-500 text-brand-dark font-bold py-3.5 rounded-xl transition-colors">Order Premium</a>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-heading text-2xl font-bold text-white mb-2">Catering Trays</h3>
-                        <p class="text-brand-gold font-semibold text-sm mb-2">JOLLOF SOCIAL SURPRISES</p>
-                        <p class="text-stone-400 text-xs mb-6">Ideal for parties, office events, and family gatherings.</p>
-                        <div class="font-heading text-3xl font-black text-brand-gold mb-6">$75 – $200+</div>
-                    </div>
-                    <a href="tel:6145409005" class="w-full text-center bg-stone-700 hover:bg-stone-600 text-white font-bold py-3.5 rounded-xl transition-colors">Inquire Catering</a>
-                </div>
-            </div>
+  <!-- Drawer: closes on backdrop click and Escape -->
+  <div id="sidebar" class="fixed inset-0 z-[60] bg-brand-dark/80 backdrop-blur-sm hidden" onclick="if(event.target===this)toggleSidebar()" role="dialog" aria-modal="true" aria-label="Site navigation">
+    <div class="w-96 max-w-[90vw] h-[100dvh] overscroll-contain bg-brand-dark text-white shadow-2xl p-8 overflow-y-auto border-r border-stone-800 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-stone-800">
+          <span class="font-heading text-2xl tracking-widest text-brand-gold uppercase">Navigation</span>
+          <button type="button" onclick="toggleSidebar()" class="text-stone-400 hover:text-white text-2xl" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
         </div>
-    </section>
-
-    <!-- Location & Contact -->
-    <section id="location" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-stone-900 mb-6">Visit & Connect</h2>
-                <p class="text-stone-600 mb-8 leading-relaxed">Stop by to grab your food hot and fresh, or give us a call or send an email to schedule pickup and catering reservations.</p>
-                
-                <div class="space-y-6">
-                    <!-- Address -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-stone-900">Address</h4>
-                            <a href="https://maps.google.com/?q=1282+Essex+ave+Columbus+Ohio+43201" target="_blank" class="text-stone-600 hover:text-brand-red transition-colors">
-                                1282 Essex Ave<br/>Columbus, OH 43201
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Phone Number -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-stone-900">Mobile Call / Orders</h4>
-                            <a href="tel:6145409005" class="text-stone-600 hover:text-brand-red transition-colors font-medium">614-540-9005</a>
-                        </div>
-                    </div>
-
-                    <!-- Email Address -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-stone-900">Email Us</h4>
-                            <a href="mailto:infor@jollofsocial.us" class="text-stone-600 hover:text-brand-red transition-colors font-medium">infor@jollofsocial.us</a>
-                        </div>
-                    </div>
-
-                    <!-- Instagram -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-brand-red flex-shrink-0 text-xl">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-stone-900">Follow Us</h4>
-                            <a href="#" class="text-stone-600 hover:text-brand-red transition-colors font-medium">@JollofSocial</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Google Map Embed -->
-            <div class="w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg border border-stone-200">
-                <iframe 
-                    title="Jollof Social Location"
-                    src="https://maps.google.com/maps?q=1282%20Essex%20ave%20Columbus%20Ohio%2043201&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                    class="w-full h-full border-0" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
+        <div class="py-8 space-y-8">
+          <div>
+            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-4">Overview</h4>
+            <ul class="space-y-3 font-heading text-xl">
+              <li><a href="#about" onclick="toggleSidebar()" class="hover:text-brand-orange block">About Jollof Social</a></li>
+              <li><a href="#hours" onclick="toggleSidebar()" class="hover:text-brand-orange block">Opening Hours</a></li>
+              <li><a href="#location" onclick="toggleSidebar()" class="hover:text-brand-orange block">Location & Contact</a></li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-stone-800">
+            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-4">Menus & Services</h4>
+            <ul class="space-y-3 font-heading text-xl text-stone-300">
+              <li><a href="#how-to-order" onclick="toggleSidebar()" class="hover:text-brand-orange block">How to Order</a></li>
+              <li><a href="#corporate" onclick="toggleSidebar()" class="hover:text-brand-orange block">Corporate Lunch Menu</a></li>
+              <li><a href="#online-menu" onclick="toggleSidebar()" class="hover:text-brand-orange block">Delivery & Online Menu</a></li>
+              <li><a href="#meal-prep" onclick="toggleSidebar()" class="hover:text-brand-orange block">Meal Prep</a></li>
+              <li><a href="#js-surprise" onclick="toggleSidebar()" class="hover:text-brand-orange block">JS Surprise Platters</a></li>
+              <li><a href="#catering-form" onclick="toggleSidebar()" class="hover:text-brand-orange block">Catering Request Form</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="pt-6 border-t border-stone-800 text-xs text-stone-300 space-y-2">
+        <p><i class="fa-solid fa-phone text-brand-orange mr-2" aria-hidden="true"></i> 614-540-9005</p>
+        <p><i class="fa-solid fa-envelope text-brand-orange mr-2" aria-hidden="true"></i> info@jollofsocial.us</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-brand-dark text-stone-400 py-8 border-t border-stone-800 text-center text-sm">
-        <p>&copy; 2026 Jollof Social. All rights reserved. Columbus, OH.</p>
-    </footer>
 
+<!-- Mobile bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-brand-dark/95 backdrop-blur-md border-t border-stone-800 p-3 sm:hidden z-40 flex items-center gap-2">
+  <a href="tel:6145409005" class="flex-1 text-center bg-stone-800 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-phone mr-1 text-brand-orange" aria-hidden="true"></i> Call Us</a>
+  <a href="#how-to-order" class="flex-1 text-center bg-brand-orange text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-bag-shopping mr-1" aria-hidden="true"></i> Order</a>
+</div>
+
+<script>
+// Set this to your real Uber Eats store page URL
+const UBER_EATS_URL = "https://www.ubereats.com";
+document.querySelectorAll('#uberLink,.uberLink').forEach(a => a.href = UBER_EATS_URL);
+
+// Menu data
+const corpMain = [["Jollof Rice with Chicken",16],["Jollof Rice with Fish",18],["Fried Rice with Chicken",16],["Fried Rice with Fish",18],["Spaghetti with Chicken",16],["Spaghetti with Fish",18]];
+const corpSide = [["Peppered Chicken",10],["Peppered Beef",10],["Peppered Gizzard",10],["Fried Plantain",8],["Fresh Coleslaw",2]];
+const onMain = [["Jollof Rice with Chicken",23],["Jollof Rice with Fish",25],["Fried Rice with Chicken",23],["Fried Rice with Fish",25],["White Rice & Spinach Stew (Chicken / Fish)",25],["Assorted Spaghetti with Chicken",23],["Assorted Spaghetti with Fish",25],["Assorted Noodles",25],["Beans Stew & Plantain",23],["Beans Stew with Rice",23],["Rich Garden Salad",18]];
+const onExtra = [["Peppered Chicken",12],["Peppered Beef",15],["Peppered Gizzard",12],["Fried Plantain",8],["Fresh Coleslaw",2]];
+// NOTE: Tomatoes Stew with Chicken was 12 servings for $100; changed to 10. Confirm the real number.
+const prep = [["Spinach Stew",[[5,50],[10,100]]],["Tomatoes Stew with Chicken",[[5,50],[10,100]]],["Tomatoes Stew with Beef",[[5,60],[10,120]]],["Beans Stew",[[5,50],[10,100]]],["Assorted Okra Soup",[[10,200]]]];
+
+function fill(id, items, dark) {
+  document.getElementById(id).innerHTML = items.map(([n,p]) => dark
+    ? `<li class="flex justify-between items-baseline gap-4 border-b border-stone-700/80 pb-3"><span class="text-stone-200">${n}</span><span class="font-heading text-xl font-bold text-brand-gold">$${p}</span></li>`
+    : `<li class="flex justify-between items-baseline gap-4 border-b border-stone-200 pb-3"><span class="font-medium text-stone-800">${n}</span><span class="font-heading text-xl font-bold text-stone-900">$${p}</span></li>`).join('');
+}
+fill('corpMain', corpMain); fill('corpSide', corpSide); fill('onMain', onMain, true); fill('onExtra', onExtra, true);
+document.getElementById('prep').innerHTML = prep.map(([n,t]) =>
+  `<div class="border-b border-stone-200 pb-4"><h3 class="font-bold text-stone-900 text-lg mb-1">${n}</h3><div class="flex justify-between text-stone-600">${t.map(([s,p]) => `<span>${s} Servings — <strong>$${p}</strong></span>`).join('')}</div></div>`).join('');
+
+// Drawer
+function toggleSidebar() {
+  const sb = document.getElementById('sidebar'), btn = document.getElementById('menuBtn');
+  const open = sb.classList.toggle('hidden') === false;
+  btn.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+  if (open) sb.querySelector('button').focus(); else btn.focus();
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !document.getElementById('sidebar').classList.contains('hidden')) toggleSidebar();
+});
+
+// Form submit (Formspree, AJAX)
+document.getElementById('cateringForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, btn = document.getElementById('formBtn'), msg = document.getElementById('formMsg');
+  btn.disabled = true; btn.textContent = 'Sending...'; msg.textContent = '';
+  try {
+    const r = await fetch(f.action, { method:'POST', body:new FormData(f), headers:{Accept:'application/json'} });
+    if (!r.ok) throw new Error();
+    f.reset(); msg.className = 'text-sm text-center text-green-700'; msg.textContent = 'Thank you! We received your inquiry and will contact you soon.';
+  } catch {
+    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email infor@jollofsocial.us.';
+  }
+  btn.disabled = false; btn.textContent = 'Send catering inquiry';
+});
+</script>
 </body>
 </html>
