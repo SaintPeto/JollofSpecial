@@ -12,10 +12,11 @@
 <meta property="og:title" content="Jollof Social | West African Kitchen & Catering">
 <meta property="og:description" content="Your lunch with a little more flavor. Columbus, OH.">
 <meta property="og:image" content="https://www.jollofsocial.us/images/allinone.jpg">
+<meta name="theme-color" content="#F1E7D3">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"infor@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
+{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"info@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,15 +39,14 @@ tailwind.config = { theme: { extend: {
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{transition:none!important}}
 </style>
 </head>
-<body class="bg-stone-950 text-brand-dark font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen py-4 sm:py-8 px-3 sm:px-6 lg:px-12">
+<body class="bg-[#F1E7D3] text-brand-dark font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen py-6 sm:py-10 px-4 sm:px-8 lg:px-12">
 
-<!-- Page background: sized to the screen (not the whole page), so the photo isn't stretched or blurry -->
-<div aria-hidden="true" class="fixed inset-0 -z-10 bg-stone-950 bg-no-repeat bg-cover bg-center" style="background-image:linear-gradient(rgba(18,16,14,.45),rgba(18,16,14,.65)),url('images/back2.jpg');"></div>
 
-<div class="max-w-7xl mx-auto bg-brand-light/95 backdrop-blur-md rounded-2xl shadow-2xl border border-stone-800/80 mb-16 sm:mb-0">
+
+<div class="max-w-7xl mx-auto mb-16 sm:mb-0">
 
   <!-- One sticky wrapper keeps header and filter bar aligned at any height -->
-  <div class="sticky top-0 z-50 rounded-t-2xl overflow-hidden">
+  <div class="sticky top-2 z-50 rounded-2xl overflow-hidden shadow-lg">
     <header class="bg-brand-dark/95 backdrop-blur-md text-white border-b border-stone-800 px-4 sm:px-10 py-3 flex items-center justify-between">
       <div class="flex items-center gap-4 sm:gap-8">
         <button id="menuBtn" type="button" onclick="toggleSidebar()" aria-expanded="false" aria-controls="sidebar" class="text-stone-300 hover:text-brand-orange flex items-center gap-3 tracking-widest uppercase text-xs font-semibold transition-colors" aria-label="Open menu">
@@ -75,9 +75,9 @@ tailwind.config = { theme: { extend: {
     </nav>
   </div>
 
-  <main>
+  <main class="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6">
   <!-- Hero -->
-  <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-6 text-center border-b border-stone-800" style="background-image:linear-gradient(rgba(18,16,14,.55),rgba(18,16,14,.70)),url('images/back3.jpg');">
+  <section class="rounded-2xl overflow-hidden shadow-md relative bg-cover bg-center text-white py-24 md:py-32 px-6 text-center" style="background-image:linear-gradient(rgba(18,16,14,.55),rgba(18,16,14,.70)),url('images/back3.jpg');">
     <div class="max-w-4xl mx-auto">
       <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-gold block mb-6">Columbus, Ohio • Culinary Excellence</span>
       <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-wide mb-8 leading-tight drop-shadow-lg">Your lunch with a little more flavor.</h1>
@@ -90,7 +90,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- How to order -->
-  <section id="how-to-order" class="py-14 px-6 sm:px-12 bg-stone-50 border-b border-stone-200">
+  <section id="how-to-order" class="rounded-2xl overflow-hidden shadow-md py-14 px-6 sm:px-12 bg-stone-50">
     <div class="max-w-5xl mx-auto">
       <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 text-center mb-8">How to order</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-stone-700">
@@ -102,7 +102,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Corporate -->
-  <section id="corporate" class="py-20 px-6 sm:px-12 bg-white">
+  <section id="corporate" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Business & Executive Dining</span>
@@ -118,7 +118,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Online menu -->
-  <section id="online-menu" class="py-24 px-6 sm:px-12 bg-cover bg-center text-white border-t border-stone-800" style="background-image:linear-gradient(rgba(18,16,14,.65),rgba(18,16,14,.75)),url('images/back2.jpg');">
+  <section id="online-menu" class="rounded-2xl overflow-hidden shadow-md py-24 px-6 sm:px-12 bg-cover bg-center text-white" style="background-image:linear-gradient(rgba(18,16,14,.65),rgba(18,16,14,.75)),url('images/back2.jpg');">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-gold block">Doorstep Delivery & Kitchen Pickup</span>
@@ -142,7 +142,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Meal prep & platters -->
-  <section id="meal-prep" class="py-20 px-6 sm:px-12 bg-stone-50">
+  <section id="meal-prep" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-stone-50">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
       <div>
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Home & Executive Provisioning</span>
@@ -165,14 +165,14 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Catering form -->
-  <section id="catering-form" class="py-20 px-6 sm:px-12 bg-white border-t border-stone-200">
+  <section id="catering-form" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-12">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block">Custom Events & Gatherings</span>
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
         <p class="text-stone-600 text-sm mt-2">Packages range from $75 – $500+. Send the form and we'll reply with a custom quote.</p>
       </div>
-      <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+      <!-- Replace xppqvgok with your Formspree form ID (formspree.io) -->
       <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-stone-50 p-6 sm:p-8 rounded-2xl border border-stone-200">
         <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="New catering inquiry - Jollof Social">
@@ -193,7 +193,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Reviews: fake testimonials removed. Add real quotes (with permission) here. -->
-  <section id="reviews" class="py-16 px-6 sm:px-12 bg-stone-900 text-white border-t border-stone-800 text-center">
+  <section id="reviews" class="rounded-2xl overflow-hidden shadow-md py-16 px-6 sm:px-12 bg-stone-900 text-white text-center">
     <h2 class="font-heading text-3xl sm:text-4xl mb-4">See what guests are saying</h2>
     <p class="text-stone-300 text-sm max-w-xl mx-auto mb-6">Follow our kitchen for recent dishes and customer posts.</p>
     <div class="flex justify-center gap-4 text-xs uppercase tracking-wider font-semibold">
@@ -203,7 +203,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- About & hours -->
-  <section id="about" class="py-20 px-6 sm:px-12 bg-white border-t border-stone-200">
+  <section id="about" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
       <div>
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-stone-600 block mb-2">Our Story</span>
@@ -223,7 +223,7 @@ tailwind.config = { theme: { extend: {
   </section>
 
   <!-- Location -->
-  <section id="location" class="py-20 px-6 sm:px-12 bg-stone-50 border-t border-stone-200">
+  <section id="location" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-stone-50">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
       <div>
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-orange block mb-2">Get In Touch</span>
@@ -231,7 +231,7 @@ tailwind.config = { theme: { extend: {
         <div class="space-y-8">
           <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Kitchen Address</h3><a href="https://maps.google.com/?q=1282+Essex+ave+Columbus+Ohio+43201" target="_blank" rel="noopener" class="text-stone-800 hover:text-brand-orange font-medium">1282 Essex Ave, Columbus, OH 43201</a></div>
           <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Telephone</h3><a href="tel:6145409005" class="text-stone-800 hover:text-brand-orange font-medium">614-540-9005</a></div>
-          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Email</h3><a href="mailto:infor@jollofsocial.us" class="text-stone-800 hover:text-brand-orange font-medium">info@jollofsocial.us</a></div>
+          <div><h3 class="text-xs font-bold uppercase tracking-widest text-stone-600 mb-1">Email</h3><a href="mailto:info@jollofsocial.us" class="text-stone-800 hover:text-brand-orange font-medium">info@jollofsocial.us</a></div>
         </div>
       </div>
       <div class="w-full h-80 lg:h-96 border border-stone-300 rounded-xl overflow-hidden shadow-sm">
@@ -241,7 +241,7 @@ tailwind.config = { theme: { extend: {
   </section>
   </main>
 
-  <footer class="bg-brand-dark text-stone-400 py-10 border-t border-stone-800 text-center text-xs tracking-wider uppercase rounded-b-2xl">
+  <footer class="bg-brand-dark text-stone-400 py-10 text-center text-xs tracking-wider uppercase rounded-2xl mt-4 sm:mt-6">
     <p>&copy; 2026 Jollof Social. <a href="https://www.jollofsocial.us" class="text-brand-gold hover:text-white">www.jollofsocial.us</a>. All rights reserved.</p>
   </footer>
 </div>
@@ -334,7 +334,7 @@ document.getElementById('cateringForm').addEventListener('submit', async e => {
     if (!r.ok) throw new Error();
     f.reset(); msg.className = 'text-sm text-center text-green-700'; msg.textContent = 'Thank you! We received your inquiry and will contact you soon.';
   } catch {
-    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email infor@jollofsocial.us.';
+    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email info@jollofsocial.us.';
   }
   btn.disabled = false; btn.textContent = 'Send catering inquiry';
 });
