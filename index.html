@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jollof Social | West African Kitchen & Catering in Columbus, OH</title>
-<meta name="description" content="Jollof Social is a West African kitchen in Columbus, OH. Corporate lunches, delivery, meal prep, surprise platters and event catering.">
+<meta name="description" content="Jollof Social is a West African kitchen in Columbus, OH. Delivery, meal prep, surprise platters and event catering.">
 <link rel="canonical" href="https://www.jollofsocial.us/">
 <link rel="icon" type="image/jpeg" href="images/allinone.jpg">
 <meta property="og:type" content="restaurant">
@@ -13,17 +13,11 @@
 <meta property="og:description" content="Your lunch with a little more flavor. Columbus, OH.">
 <meta property="og:image" content="https://www.jollofsocial.us/images/allinone.jpg">
 <meta name="theme-color" content="#F1E7D3">
-<meta name="twitter:card" content="summary_large_image">
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"info@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
-</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- NOTE: Tailwind CDN is for development. Before launch, build CSS with the Tailwind CLI and replace this script with a <link> to the compiled file. -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: {
@@ -41,51 +35,42 @@ tailwind.config = { theme: { extend: {
 </head>
 <body class="bg-[#F1E7D3] text-brand-dark font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen py-6 sm:py-10 px-4 sm:px-8 lg:px-12">
 
+<div class="max-w-7xl mx-auto mb-16 sm:mb-0 space-y-6">
 
+  <!-- Section 1: Top Navigation Header (No Dropdown Menu, Minimal Nav with Lines) -->
+  <header class="sticky top-2 z-50 rounded-2xl overflow-hidden shadow-lg bg-brand-dark text-white border-b border-stone-800 px-4 sm:px-10 py-3 flex items-center justify-between">
+    <!-- Logo Left -->
+    <a href="#" class="flex items-center" aria-label="Jollof Social home">
+      <img src="images/allinone.jpg" alt="Jollof Social logo" width="80" height="80" class="h-12 sm:h-20 w-auto rounded-lg shadow-lg bg-white p-1 border border-brand-orange/40">
+    </a>
 
-<div class="max-w-7xl mx-auto mb-16 sm:mb-0">
-
-  <!-- One sticky wrapper keeps header and filter bar aligned at any height -->
-  <div class="sticky top-2 z-50 rounded-2xl overflow-hidden shadow-lg">
-    <header class="bg-brand-dark/95 backdrop-blur-md text-white border-b border-stone-800 px-4 sm:px-10 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-4 sm:gap-8">
-        <button id="menuBtn" type="button" onclick="toggleSidebar()" aria-expanded="false" aria-controls="sidebar" class="text-stone-300 hover:text-brand-orange flex items-center gap-3 tracking-widest uppercase text-xs font-semibold transition-colors" aria-label="Open menu">
-          <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i><span class="hidden sm:inline">Menu</span>
-        </button>
-        <a href="#" class="flex items-center" aria-label="Jollof Social home">
-          <img src="images/allinone.jpg" alt="Jollof Social logo" width="80" height="80" class="h-12 sm:h-20 w-auto rounded-lg shadow-lg bg-white p-1 border border-brand-orange/40">
-        </a>
-      </div>
-      <div class="flex items-center gap-3">
-        <a href="#how-to-order" class="hidden md:inline-flex items-center gap-2 bg-brand-orange hover:bg-white hover:text-brand-dark text-white px-5 py-3 rounded-xl text-xs tracking-widest uppercase font-bold transition-all border border-brand-orange">
-          <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> How to Order
-        </a>
-        <a href="tel:6145409005" class="border-2 border-brand-orange bg-brand-orange/10 text-brand-orange hover:bg-brand-orange hover:text-white px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm tracking-widest font-bold transition-all">(614) 540-9005</a>
-      </div>
-    </header>
-    <!-- Filter bar hidden on phones (bottom bar covers it) -->
-    <nav aria-label="Quick links" class="hidden sm:block bg-brand-dark text-stone-300 border-b border-stone-800 py-3 px-6">
-      <div class="max-w-5xl mx-auto flex items-center justify-start lg:justify-center gap-3 overflow-x-auto text-xs uppercase tracking-wider font-semibold whitespace-nowrap scrollbar-none">
-        <a href="#corporate" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-orange hover:text-brand-orange transition-colors">Corporate Lunch</a>
-        <a href="#online-menu" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-gold hover:text-brand-gold transition-colors">Delivery Menu</a>
-        <a href="#meal-prep" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-orange hover:text-brand-orange transition-colors">Meal Prep</a>
-        <a href="#js-surprise" class="px-4 py-2 rounded-full border border-stone-700 hover:border-brand-gold hover:text-brand-gold transition-colors">Surprise Platters</a>
-        <a href="#catering-form" class="px-4 py-2 rounded-full border border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white transition-colors">Inquire Catering</a>
-      </div>
+    <!-- Center Navigation Links (Underlined style like Akoko) -->
+    <nav aria-label="Quick links" class="flex items-center gap-3 sm:gap-6 overflow-x-auto text-[11px] sm:text-xs uppercase tracking-widest font-semibold whitespace-nowrap scrollbar-none py-1">
+      <a href="#corporate" class="relative py-1 text-stone-200 hover:text-brand-orange transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange/80">Corporate Lunch</a>
+      <a href="#online-menu" class="relative py-1 text-stone-200 hover:text-brand-gold transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-gold/80">Delivery Menu</a>
+      <a href="#meal-prep" class="relative py-1 text-stone-200 hover:text-brand-orange transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange/80">Meal Prep</a>
+      <a href="#js-surprise" class="relative py-1 text-stone-200 hover:text-brand-gold transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-gold/80">Surprise Platters</a>
+      <a href="#catering-form" class="relative py-1 text-brand-orange hover:text-white transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-orange">Inquire Catering</a>
     </nav>
-  </div>
 
-  <main class="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6">
-  <!-- Hero -->
-  <section class="rounded-2xl overflow-hidden shadow-md relative bg-cover bg-center text-white py-24 md:py-32 px-6 text-center" style="background-image:linear-gradient(rgba(18,16,14,.55),rgba(18,16,14,.70)),url('images/back3.jpg');">
-    <div class="max-w-4xl mx-auto">
-      <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-gold block mb-6">Columbus, Ohio • Culinary Excellence</span>
-      <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-wide mb-8 leading-tight drop-shadow-lg">Your lunch with a little more flavor.</h1>
-      <p class="text-base md:text-lg text-stone-200 max-w-2xl mx-auto mb-10 font-light leading-relaxed">Experience authentic West African gastronomy. Refined recipes prepared with bold heritage spices, high-quality ingredients, and uncompromising craft.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-5">
-        <a href="#corporate" class="bg-brand-orange text-white hover:bg-white hover:text-brand-dark font-semibold px-8 py-4 text-xs uppercase tracking-[0.2em] transition-all border border-brand-orange">Corporate Menu</a>
-        <a href="#how-to-order" class="bg-brand-dark/80 border border-stone-400 hover:border-white text-stone-200 hover:text-white font-semibold px-8 py-4 text-xs uppercase tracking-[0.2em] transition-all">How to Order</a>
-      </div>
+    <!-- Phone Number Right -->
+    <div class="hidden sm:flex items-center">
+      <a href="tel:6145409005" class="border-2 border-brand-orange bg-brand-orange/10 text-brand-orange hover:bg-brand-orange hover:text-white px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm tracking-widest font-bold transition-all">(614) 540-9005</a>
+    </div>
+  </header>
+
+  <main class="flex flex-col gap-6">
+
+  <!-- Section 2: Hero Section (Background image back5.jpg, headline moved below image section) -->
+  <section class="rounded-2xl overflow-hidden shadow-md bg-white">
+    <!-- Image Display Area using back5.jpg -->
+    <div class="w-full h-[380px] sm:h-[500px] md:h-[600px] bg-cover bg-center" style="background-image: url('images/back5.jpg');"></div>
+    
+    <!-- Text & Subtitle Area Below Section 2 Photo -->
+    <div class="py-8 px-6 text-center bg-stone-50 border-t border-stone-200">
+      <span class="text-xs font-bold tracking-[0.3em] uppercase text-brand-orange block mb-3">Columbus, Ohio • Culinary Excellence</span>
+      <h1 class="font-heading text-2xl sm:text-4xl md:text-5xl tracking-wide text-stone-900 leading-tight mb-4">Your lunch with a little more flavor.</h1>
+      <p class="text-sm md:text-base text-stone-600 max-w-2xl mx-auto font-light leading-relaxed">Experience authentic West African gastronomy. Refined recipes prepared with bold heritage spices, high-quality ingredients, and uncompromising craft.</p>
     </div>
   </section>
 
@@ -172,7 +157,6 @@ tailwind.config = { theme: { extend: {
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
         <p class="text-stone-600 text-sm mt-2">Packages range from $75 – $500+. Send the form and we'll reply with a custom quote.</p>
       </div>
-      <!-- Replace xppqvgok with your Formspree form ID (formspree.io) -->
       <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-stone-50 p-6 sm:p-8 rounded-2xl border border-stone-200">
         <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="New catering inquiry - Jollof Social">
@@ -192,7 +176,7 @@ tailwind.config = { theme: { extend: {
     </div>
   </section>
 
-  <!-- Reviews: fake testimonials removed. Add real quotes (with permission) here. -->
+  <!-- Social links -->
   <section id="reviews" class="rounded-2xl overflow-hidden shadow-md py-16 px-6 sm:px-12 bg-stone-900 text-white text-center">
     <h2 class="font-heading text-3xl sm:text-4xl mb-4">See what guests are saying</h2>
     <p class="text-stone-300 text-sm max-w-xl mx-auto mb-6">Follow our kitchen for recent dishes and customer posts.</p>
@@ -241,57 +225,18 @@ tailwind.config = { theme: { extend: {
   </section>
   </main>
 
-  <footer class="bg-brand-dark text-stone-400 py-10 text-center text-xs tracking-wider uppercase rounded-2xl mt-4 sm:mt-6">
+  <footer class="bg-brand-dark text-stone-400 py-10 text-center text-xs tracking-wider uppercase rounded-2xl">
     <p>&copy; 2026 Jollof Social. <a href="https://www.jollofsocial.us" class="text-brand-gold hover:text-white">www.jollofsocial.us</a>. All rights reserved.</p>
   </footer>
 </div>
 
-  <!-- Drawer: closes on backdrop click and Escape -->
-  <div id="sidebar" class="fixed inset-0 z-[60] bg-brand-dark/80 backdrop-blur-sm hidden" onclick="if(event.target===this)toggleSidebar()" role="dialog" aria-modal="true" aria-label="Site navigation">
-    <div class="w-96 max-w-[90vw] h-[100dvh] overscroll-contain bg-brand-dark text-white shadow-2xl p-8 overflow-y-auto border-r border-stone-800 flex flex-col justify-between">
-      <div>
-        <div class="flex items-center justify-between pb-6 border-b border-stone-800">
-          <span class="font-heading text-2xl tracking-widest text-brand-gold uppercase">Navigation</span>
-          <button type="button" onclick="toggleSidebar()" class="text-stone-400 hover:text-white text-2xl" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
-        </div>
-        <div class="py-8 space-y-8">
-          <div>
-            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-4">Overview</h4>
-            <ul class="space-y-3 font-heading text-xl">
-              <li><a href="#about" onclick="toggleSidebar()" class="hover:text-brand-orange block">About Jollof Social</a></li>
-              <li><a href="#hours" onclick="toggleSidebar()" class="hover:text-brand-orange block">Opening Hours</a></li>
-              <li><a href="#location" onclick="toggleSidebar()" class="hover:text-brand-orange block">Location & Contact</a></li>
-            </ul>
-          </div>
-          <div class="pt-6 border-t border-stone-800">
-            <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-muted mb-4">Menus & Services</h4>
-            <ul class="space-y-3 font-heading text-xl text-stone-300">
-              <li><a href="#how-to-order" onclick="toggleSidebar()" class="hover:text-brand-orange block">How to Order</a></li>
-              <li><a href="#corporate" onclick="toggleSidebar()" class="hover:text-brand-orange block">Corporate Lunch Menu</a></li>
-              <li><a href="#online-menu" onclick="toggleSidebar()" class="hover:text-brand-orange block">Delivery & Online Menu</a></li>
-              <li><a href="#meal-prep" onclick="toggleSidebar()" class="hover:text-brand-orange block">Meal Prep</a></li>
-              <li><a href="#js-surprise" onclick="toggleSidebar()" class="hover:text-brand-orange block">JS Surprise Platters</a></li>
-              <li><a href="#catering-form" onclick="toggleSidebar()" class="hover:text-brand-orange block">Catering Request Form</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="pt-6 border-t border-stone-800 text-xs text-stone-300 space-y-2">
-        <p><i class="fa-solid fa-phone text-brand-orange mr-2" aria-hidden="true"></i> 614-540-9005</p>
-        <p><i class="fa-solid fa-envelope text-brand-orange mr-2" aria-hidden="true"></i> info@jollofsocial.us</p>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Mobile bar -->
+<!-- Mobile Bar for Phones -->
 <div class="fixed bottom-0 left-0 right-0 bg-brand-dark/95 backdrop-blur-md border-t border-stone-800 p-3 sm:hidden z-40 flex items-center gap-2">
   <a href="tel:6145409005" class="flex-1 text-center bg-stone-800 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-phone mr-1 text-brand-orange" aria-hidden="true"></i> Call Us</a>
   <a href="#how-to-order" class="flex-1 text-center bg-brand-orange text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider"><i class="fa-solid fa-bag-shopping mr-1" aria-hidden="true"></i> Order</a>
 </div>
 
 <script>
-// Set this to your real Uber Eats store page URL
 const UBER_EATS_URL = "https://www.ubereats.com";
 document.querySelectorAll('#uberLink,.uberLink').forEach(a => a.href = UBER_EATS_URL);
 
@@ -300,7 +245,6 @@ const corpMain = [["Jollof Rice with Chicken",16],["Jollof Rice with Fish",18],[
 const corpSide = [["Peppered Chicken",10],["Peppered Beef",10],["Peppered Gizzard",10],["Fried Plantain",8],["Fresh Coleslaw",2]];
 const onMain = [["Jollof Rice with Chicken",23],["Jollof Rice with Fish",25],["Fried Rice with Chicken",23],["Fried Rice with Fish",25],["White Rice & Spinach Stew (Chicken / Fish)",25],["Assorted Spaghetti with Chicken",23],["Assorted Spaghetti with Fish",25],["Assorted Noodles",25],["Beans Stew & Plantain",23],["Beans Stew with Rice",23],["Rich Garden Salad",18]];
 const onExtra = [["Peppered Chicken",12],["Peppered Beef",15],["Peppered Gizzard",12],["Fried Plantain",8],["Fresh Coleslaw",2]];
-// NOTE: Tomatoes Stew with Chicken was 12 servings for $100; changed to 10. Confirm the real number.
 const prep = [["Spinach Stew",[[5,50],[10,100]]],["Tomatoes Stew with Chicken",[[5,50],[10,100]]],["Tomatoes Stew with Beef",[[5,60],[10,120]]],["Beans Stew",[[5,50],[10,100]]],["Assorted Okra Soup",[[10,200]]]];
 
 function fill(id, items, dark) {
@@ -312,19 +256,7 @@ fill('corpMain', corpMain); fill('corpSide', corpSide); fill('onMain', onMain, t
 document.getElementById('prep').innerHTML = prep.map(([n,t]) =>
   `<div class="border-b border-stone-200 pb-4"><h3 class="font-bold text-stone-900 text-lg mb-1">${n}</h3><div class="flex justify-between text-stone-600">${t.map(([s,p]) => `<span>${s} Servings — <strong>$${p}</strong></span>`).join('')}</div></div>`).join('');
 
-// Drawer
-function toggleSidebar() {
-  const sb = document.getElementById('sidebar'), btn = document.getElementById('menuBtn');
-  const open = sb.classList.toggle('hidden') === false;
-  btn.setAttribute('aria-expanded', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-  if (open) sb.querySelector('button').focus(); else btn.focus();
-}
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && !document.getElementById('sidebar').classList.contains('hidden')) toggleSidebar();
-});
-
-// Form submit (Formspree, AJAX)
+// Form submit (Formspree AJAX)
 document.getElementById('cateringForm').addEventListener('submit', async e => {
   e.preventDefault();
   const f = e.target, btn = document.getElementById('formBtn'), msg = document.getElementById('formMsg');
