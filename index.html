@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"info@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
+{"@context":"https://schema.org","@type":"Restaurant","name":"Jollof Social","url":"https://www.jollofsocial.us","image":"https://www.jollofsocial.us/images/allinone.jpg","telephone":"+1-614-540-9005","email":"infor@jollofsocial.us","servesCuisine":"West African","address":{"@type":"PostalAddress","streetAddress":"1282 Essex Ave","addressLocality":"Columbus","addressRegion":"OH","postalCode":"43201","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"}],"sameAs":["https://instagram.com/jollof.social.co","https://tiktok.com/@jollof.social.co"]}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +28,23 @@
 <script>
 tailwind.config = { theme: { extend: {
   fontFamily: { heading: ['"Cormorant Garamond"','serif'], sans: ['"Plus Jakarta Sans"','sans-serif'] },
-  colors: { brand: { 
-    dark:'#211C1A',      /* Espresso / Charcoal */
-    cream:'#F7F2E8',     /* Warm Cream Background */
-    terracotta:'#C65D32',/* Terracotta Accents / Buttons */
-    gold:'#C79A45',      /* Golden Ochre */
-    sage:'#8A9274',      /* Soft Sage */
-    muted:'#8C827A' 
+  colors: { brand: {
+    dark:'#211C1A',       /* Espresso / Charcoal */
+    cream:'#F7F2E8',      /* Warm Cream Background */
+    terracotta:'#C65D32', /* Terracotta Accents / Buttons */
+    gold:'#C79A45',       /* Golden Ochre */
+    sage:'#8A9274',       /* Soft Sage */
+    muted:'#8C827A'
   } }
 } } }
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
+  .lbl{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#44403c;margin-bottom:.5rem}
+  .fld{width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding:.75rem 1rem;border-radius:.5rem;border:1px solid #d6d3d1;background:#fff;font-size:.875rem;color:#292524}
+  .fld:focus{outline:none;border-color:#C65D32}
+  .fld[type=date],.fld[type=time]{-webkit-appearance:none;appearance:none;min-height:2.9rem}
+  select.fld{-webkit-appearance:none;appearance:none;padding-right:2.2rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%2357534e' stroke-width='2'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
   .scrollbar-none::-webkit-scrollbar{display:none}
   section[id]{scroll-margin-top:7.5rem}
   :focus-visible{outline:2px solid #C79A45;outline-offset:2px}
@@ -52,12 +57,10 @@ tailwind.config = { theme: { extend: {
 
   <!-- Section 1: Top Navigation Header -->
   <header class="sticky top-2 z-50 rounded-2xl overflow-hidden shadow-lg bg-brand-dark text-white border-b border-stone-800 px-3 sm:px-10 py-3 flex items-center justify-between">
-    <!-- Logo Left -->
     <a href="#" class="flex items-center shrink-0" aria-label="Jollof Social home">
       <img src="images/allinone.jpg" alt="Jollof Social logo" width="100" height="100" class="h-16 sm:h-20 w-auto rounded-xl shadow-md bg-white p-1 border border-brand-terracotta/50 object-contain transition-transform hover:scale-105">
     </a>
 
-    <!-- Center Navigation Links -->
     <nav aria-label="Quick links" class="flex items-center gap-3 sm:gap-6 overflow-x-auto text-[11px] sm:text-xs uppercase tracking-widest font-semibold whitespace-nowrap scrollbar-none py-1 ml-2">
       <a href="#corporate" class="relative py-1 text-stone-200 hover:text-brand-terracotta transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-terracotta/80">Corporate Lunch</a>
       <a href="#online-menu" class="relative py-1 text-stone-200 hover:text-brand-gold transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-gold/80">Delivery Menu</a>
@@ -85,7 +88,7 @@ tailwind.config = { theme: { extend: {
     </div>
   </section>
 
-  <!-- Section 2: How to Order -->
+  <!-- How to order -->
   <section id="how-to-order" class="rounded-2xl overflow-hidden shadow-md py-14 px-6 sm:px-12 bg-white">
     <div class="max-w-5xl mx-auto">
       <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 text-center mb-8">How to order</h2>
@@ -128,22 +131,14 @@ tailwind.config = { theme: { extend: {
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-gold block">Doorstep Delivery & Kitchen Pickup</span>
         <h2 class="font-heading text-3xl sm:text-5xl mt-2">Online Delivery Menu</h2>
-        
+
         <div class="flex flex-col items-center justify-center gap-3 mt-6">
           <span class="text-stone-300 text-xs tracking-widest uppercase">Available on Delivery Platforms</span>
           <div class="flex flex-wrap items-center justify-center gap-3">
-            <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
-              <i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats
-            </a>
-            <a href="https://www.doordash.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
-              <i class="fa-solid fa-bag-shopping text-brand-gold" aria-hidden="true"></i> DoorDash
-            </a>
-            <a href="https://www.grubhub.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
-              <i class="fa-solid fa-utensils text-brand-gold" aria-hidden="true"></i> Grubhub
-            </a>
-            <a href="https://www.fooda.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener">
-              <i class="fa-solid fa-building text-brand-gold" aria-hidden="true"></i> Fooda
-            </a>
+            <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
+            <a href="https://www.doordash.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping text-brand-gold" aria-hidden="true"></i> DoorDash</a>
+            <a href="https://www.grubhub.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-utensils text-brand-gold" aria-hidden="true"></i> Grubhub</a>
+            <a href="https://www.fooda.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-building text-brand-gold" aria-hidden="true"></i> Fooda</a>
           </div>
         </div>
       </div>
@@ -184,53 +179,44 @@ tailwind.config = { theme: { extend: {
     </div>
   </section>
 
-  <!-- Catering Form -->
+  <!-- Catering Forms (side by side on computers, stacked on phones) -->
   <section id="catering-form" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Custom Events & Gatherings</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Custom Events & Corporate Lunch</span>
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
-        <p class="text-stone-600 text-sm mt-2">Packages range from $75 – $500+. Send the form and we'll reply with a custom quote.</p>
+        <p class="text-stone-600 text-sm mt-2">Choose the form that fits and we'll reply with a custom quote.</p>
       </div>
-      <form id="cateringForm" action="https://formspree.io/f/xppqvgok" method="POST" class="space-y-6 bg-brand-cream p-6 sm:p-8 rounded-2xl border border-stone-200 overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      <form action="https://formspree.io/f/xppqvgok" method="POST" class="inquiry-form space-y-5 bg-brand-cream p-6 sm:p-8 rounded-2xl border border-stone-200">
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="_subject" value="New CORPORATE LUNCH inquiry - Jollof Social">
+        <input type="hidden" name="Inquiry type" value="Corporate Lunch">
+        <div><h3 class="font-heading text-2xl text-stone-900">Corporate Lunch Inquiry</h3><p class="text-stone-600 text-sm mt-1">Team lunches and company catering, one-time or recurring.</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="c-company" class="lbl">Company</label><input id="c-company" type="text" name="Company" required placeholder="Company name" class="fld" autocomplete="organization"></div><div class="min-w-0"><label for="c-contact" class="lbl">Contact</label><input id="c-contact" type="text" name="Contact" required placeholder="Contact person" class="fld" autocomplete="name"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="c-email" class="lbl">Email</label><input id="c-email" type="email" name="email" required class="fld" autocomplete="email"></div><div class="min-w-0"><label for="c-phone" class="lbl">Phone</label><input id="c-phone" type="tel" name="Phone" required placeholder="(614) 000-0000" class="fld" autocomplete="tel"></div></div>
+        <div class="min-w-0"><label for="c-address" class="lbl">Delivery address</label><input id="c-address" type="text" name="Delivery address" required placeholder="Street, city, ZIP" class="fld" autocomplete="street-address"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="c-type" class="lbl">Order type</label><select id="c-type" name="Order type" class="fld"><option>Team lunch</option><option>Company catering</option></select></div><div class="min-w-0"><label for="c-meals" class="lbl">Number of meals</label><input id="c-meals" type="number" name="Number of meals" required placeholder="e.g. 25" class="fld" min="1"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="c-freq" class="lbl">Frequency</label><select id="c-freq" name="Frequency" class="fld"><option>One-time order</option><option>Every day</option><option>2 x a week</option><option>Weekly</option><option>Other (tell us below)</option></select></div><div class="min-w-0"><label for="c-date" class="lbl">Preferred start date</label><input id="c-date" type="date" name="Preferred date" placeholder="" class="fld"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="c-time" class="lbl">Delivery time</label><input id="c-time" type="time" name="Delivery time" placeholder="" class="fld" value="12:00"></div><div class="min-w-0"><label for="c-budget" class="lbl">Budget per person</label><input id="c-budget" type="text" name="Budget per person" placeholder="e.g. $16 (lower or higher is fine)" class="fld"></div></div>
+        <div class="min-w-0"><label for="c-items" class="lbl">Preferred items on menu</label><textarea id="c-items" name="Preferred items on menu" rows="3" placeholder="e.g. Jollof Rice with Chicken, Fried Plantain" class="fld"></textarea></div>
+        <div class="min-w-0"><label for="c-diet" class="lbl">Dietary needs / allergies</label><textarea id="c-diet" name="Dietary needs/allergies" rows="2" placeholder="Any allergies or dietary needs" class="fld"></textarea></div>
+        <div class="min-w-0"><label for="c-extra" class="lbl">Additional requests</label><textarea id="c-extra" name="Additional requests" rows="2" placeholder="Anything else we should know" class="fld"></textarea></div>
+        <button type="submit" class="w-full bg-brand-terracotta hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send corporate lunch inquiry</button>
+        <p role="status" class="form-msg text-sm text-center min-h-[1.25rem]"></p>
+      </form>
+      <form action="https://formspree.io/f/xppqvgok" method="POST" class="inquiry-form space-y-5 bg-brand-cream p-6 sm:p-8 rounded-2xl border border-stone-200">
         <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="New catering inquiry - Jollof Social">
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="w-full">
-            <label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
-            <input id="f-name" type="text" name="name" required autocomplete="name" placeholder="John Doe" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
-          </div>
-          <div class="w-full">
-            <label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
-            <input id="f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="(614) 000-0000" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
-          </div>
-        </div>
-        
-        <div class="w-full">
-          <label for="f-email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Email</label>
-          <input id="f-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="w-full min-w-0">
-            <label for="f-date" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Date</label>
-            <input id="f-date" type="date" name="event_date" class="w-full max-w-full box-border px-3 sm:px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm appearance-none bg-white">
-          </div>
-          <div class="w-full min-w-0">
-            <label for="f-guests" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Estimated Guest Count</label>
-            <input id="f-guests" type="number" min="1" name="guests" placeholder="25" class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm bg-white">
-          </div>
-        </div>
-
-        <div class="w-full">
-          <label for="f-msg" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">Event Details / Menu Preferences</label>
-          <textarea id="f-msg" name="message" rows="4" placeholder="Tell us about your event..." class="w-full max-w-full box-border px-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:border-brand-terracotta text-sm"></textarea>
-        </div>
-
-        <button type="submit" id="formBtn" class="w-full bg-brand-terracotta hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send catering inquiry</button>
-        <p id="formMsg" role="status" class="text-sm text-center min-h-[1.25rem]"></p>
+        <div><h3 class="font-heading text-2xl text-stone-900">Event Catering</h3><p class="text-stone-600 text-sm mt-1">Parties and gatherings. Packages range from $75 – $500+.</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="e-name" class="lbl">Your Name</label><input id="e-name" type="text" name="name" required class="fld" autocomplete="name"></div><div class="min-w-0"><label for="e-phone" class="lbl">Phone Number</label><input id="e-phone" type="tel" name="phone" required placeholder="(614) 000-0000" class="fld" autocomplete="tel"></div></div>
+        <div class="min-w-0"><label for="e-email" class="lbl">Email</label><input id="e-email" type="email" name="email" required class="fld" autocomplete="email"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5"><div class="min-w-0"><label for="e-date" class="lbl">Event Date</label><input id="e-date" type="date" name="event_date" placeholder="" class="fld"></div><div class="min-w-0"><label for="e-guests" class="lbl">Estimated Guest Count</label><input id="e-guests" type="number" name="guests" placeholder="25" class="fld" min="1"></div></div>
+        <div class="min-w-0"><label for="e-msg" class="lbl">Event Details / Menu Preferences</label><textarea id="e-msg" name="message" rows="4" placeholder="Tell us about your event..." class="fld"></textarea></div>
+        <button type="submit" class="w-full bg-brand-terracotta hover:bg-stone-900 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-xs transition-colors">Send catering inquiry</button>
+        <p role="status" class="form-msg text-sm text-center min-h-[1.25rem]"></p>
       </form>
+      </div>
     </div>
   </section>
 
@@ -256,8 +242,8 @@ tailwind.config = { theme: { extend: {
       <div id="hours" class="p-8 bg-brand-cream border border-stone-200 rounded-xl">
         <h3 class="font-heading text-2xl text-stone-900 mb-6 border-b border-stone-200 pb-3">Operating Hours</h3>
         <ul class="space-y-4 text-stone-700">
-          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">11:00 AM – 9:00 PM</span></li>
-          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">12:00 PM – 10:00 PM</span></li>
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">8:00 AM – 9:00 PM</span></li>
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">8:00 AM – 10:00 PM</span></li>
           <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-brand-terracotta">Catering & Orders Only</span></li>
         </ul>
       </div>
@@ -314,19 +300,21 @@ fill('corpMain', corpMain); fill('corpSide', corpSide); fill('onMain', onMain, t
 document.getElementById('prep').innerHTML = prep.map(([n,t]) =>
   `<div class="border-b border-stone-200 pb-4"><h3 class="font-bold text-stone-900 text-lg mb-1">${n}</h3><div class="flex justify-between text-stone-600">${t.map(([s,p]) => `<span>${s} Servings — <strong>$${p}</strong></span>`).join('')}</div></div>`).join('');
 
-// Formspree AJAX handler
-document.getElementById('cateringForm').addEventListener('submit', async e => {
-  e.preventDefault();
-  const f = e.target, btn = document.getElementById('formBtn'), msg = document.getElementById('formMsg');
-  btn.disabled = true; btn.textContent = 'Sending...'; msg.textContent = '';
-  try {
-    const r = await fetch(f.action, { method:'POST', body:new FormData(f), headers:{Accept:'application/json'} });
-    if (!r.ok) throw new Error();
-    f.reset(); msg.className = 'text-sm text-center text-green-700'; msg.textContent = 'Thank you! We received your inquiry and will contact you soon.';
-  } catch {
-    msg.className = 'text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email infor@jollofsocial.us.';
-  }
-  btn.disabled = false; btn.textContent = 'Send catering inquiry';
+// Formspree AJAX handler (works for both inquiry forms)
+document.querySelectorAll('.inquiry-form').forEach(f => {
+  const btn = f.querySelector('button[type=submit]'), msg = f.querySelector('.form-msg'), label = btn.textContent;
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = 'Sending...'; msg.textContent = '';
+    try {
+      const r = await fetch(f.action, { method:'POST', body:new FormData(f), headers:{Accept:'application/json'} });
+      if (!r.ok) throw new Error();
+      f.reset(); msg.className = 'form-msg text-sm text-center text-green-700'; msg.textContent = 'Thank you! We received your inquiry and will contact you soon.';
+    } catch {
+      msg.className = 'form-msg text-sm text-center text-red-700'; msg.textContent = 'Something went wrong. Please call 614-540-9005 or email infor@jollofsocial.us.';
+    }
+    btn.disabled = false; btn.textContent = label;
+  });
 });
 </script>
 </body>
