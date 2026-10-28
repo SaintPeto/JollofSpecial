@@ -75,7 +75,7 @@ tailwind.config = { theme: { extend: {
   <!-- Section 1 (Hero Banner with Top Badge Overlay) -->
   <section class="rounded-2xl overflow-hidden shadow-md bg-white">
     <!-- Hero Image Area with Badge at Top Center -->
-    <div class="relative w-full h-[280px] sm:h-[400px] md:h-[480px] max-h-[520px] bg-cover bg-center flex items-start justify-center pt-5 px-4" style="background-image: url('images/back1.jpg');">
+    <div class="relative w-full h-[280px] sm:h-[400px] md:h-[480px] max-h-[520px] bg-cover bg-center flex items-start justify-center pt-5 px-4" style="background-image: url('images/back3.jpg');">
       <span class="bg-brand-dark/85 backdrop-blur-md text-brand-gold border border-brand-gold/40 text-[10px] sm:text-xs font-bold tracking-[0.22em] sm:tracking-[0.25em] uppercase px-5 py-2 rounded-full shadow-lg text-center">
         Columbus, Ohio • Culinary Excellence
       </span>
@@ -100,8 +100,7 @@ tailwind.config = { theme: { extend: {
           <div class="flex flex-wrap gap-2 text-xs font-semibold">
             <a href="https://www.ubereats.com" class="uberLink underline text-stone-800 hover:text-brand-terracotta" target="_blank" rel="noopener">Uber Eats</a> •
             <a href="https://www.doordash.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">DoorDash</a> •
-            <a href="https://www.grubhub.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">Grubhub</a> •
-            <a href="https://www.fooda.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">Fooda</a>
+            <a href="https://www.grubhub.com" target="_blank" rel="noopener" class="underline text-stone-800 hover:text-brand-terracotta">Grubhub</a>
           </div>
         </div>
         <div class="p-6 bg-brand-cream border border-stone-200 rounded-xl"><h3 class="font-bold text-stone-900 mb-1"><i class="fa-solid fa-utensils text-brand-terracotta mr-2" aria-hidden="true"></i>Offices & events</h3><p>Use the <a href="#catering-form" class="underline">catering form</a> for corporate lunches, meal prep and large orders.</p></div>
@@ -115,8 +114,9 @@ tailwind.config = { theme: { extend: {
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Business & Executive Dining</span>
         <h2 class="font-heading text-3xl sm:text-5xl text-stone-900 mt-2">Corporate Menu</h2>
-        <p class="text-stone-600 text-sm mt-3">Per-person pricing for office and group orders. Delivery menu prices below are for single orders.</p>
-        <div class="w-16 h-[2px] bg-brand-terracotta mx-auto mt-4"></div>
+        <p class="text-stone-600 text-sm mt-3">Per-person pricing for office and group orders. Available on Fooda</p>
+        <a href="https://www.fooda.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 bg-brand-dark hover:bg-stone-800 text-white text-xs font-bold px-5 py-2.5 rounded-lg border border-stone-700 transition-colors"><i class="fa-solid fa-building text-brand-gold" aria-hidden="true"></i> Fooda</a>
+        <div class="w-16 h-[2px] bg-brand-terracotta mx-auto mt-6"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16">
         <div><h3 class="font-heading text-2xl text-stone-900 mb-8 pb-3 border-b-2 border-brand-terracotta/30">Main Entrées</h3><ul id="corpMain" class="space-y-6 text-sm sm:text-base"></ul></div>
@@ -138,7 +138,6 @@ tailwind.config = { theme: { extend: {
             <a href="https://www.ubereats.com" class="uberLink inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-motorcycle text-brand-gold" aria-hidden="true"></i> Uber Eats</a>
             <a href="https://www.doordash.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping text-brand-gold" aria-hidden="true"></i> DoorDash</a>
             <a href="https://www.grubhub.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-utensils text-brand-gold" aria-hidden="true"></i> Grubhub</a>
-            <a href="https://www.fooda.com" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg border border-stone-700 transition-colors" target="_blank" rel="noopener"><i class="fa-solid fa-building text-brand-gold" aria-hidden="true"></i> Fooda</a>
           </div>
         </div>
       </div>
@@ -183,7 +182,7 @@ tailwind.config = { theme: { extend: {
   <section id="catering-form" class="rounded-2xl overflow-hidden shadow-md py-20 px-6 sm:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Custom Events & Corporate Lunch</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-terracotta block">Custom Corporate Lunches And Events</span>
         <h2 class="font-heading text-3xl sm:text-4xl text-stone-900 mt-2">Inquire for Catering</h2>
         <p class="text-stone-600 text-sm mt-2">Choose the form that fits and we'll reply with a custom quote.</p>
       </div>
@@ -242,8 +241,8 @@ tailwind.config = { theme: { extend: {
       <div id="hours" class="p-8 bg-brand-cream border border-stone-200 rounded-xl">
         <h3 class="font-heading text-2xl text-stone-900 mb-6 border-b border-stone-200 pb-3">Operating Hours</h3>
         <ul class="space-y-4 text-stone-700">
-          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">8:00 AM – 9:00 PM</span></li>
-          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">8:00 AM – 10:00 PM</span></li>
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Monday – Friday</span><span class="font-semibold text-stone-900">11:00 AM – 9:00 PM</span></li>
+          <li class="flex justify-between border-b border-stone-200 pb-2"><span>Saturday</span><span class="font-semibold text-stone-900">12:00 PM – 10:00 PM</span></li>
           <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-brand-terracotta">Catering & Orders Only</span></li>
         </ul>
       </div>
